@@ -1,0 +1,60 @@
+2026-05-26T16:04:40.195-04:00  INFO 24960 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : Starting VentasServiceApplication using Java 24.0.2 with PID 24960 (C:\Users\av-alumno\Downloads\titaniumarmor\ventas-service\target\classes started by AV-Alumno in C:\Users\av-alumno\Downloads\titaniumarmor\ventas-service)
+2026-05-26T16:04:40.196-04:00  INFO 24960 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-05-26T16:04:40.309-04:00  INFO 24960 --- [ventas-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-26T16:04:40.320-04:00  INFO 24960 --- [ventas-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2026-05-26T16:04:40.388-04:00  INFO 24960 --- [ventas-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8084 (http)
+2026-05-26T16:04:40.390-04:00  INFO 24960 --- [ventas-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-26T16:04:40.391-04:00  INFO 24960 --- [ventas-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-26T16:04:40.411-04:00  INFO 24960 --- [ventas-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 213 ms
+2026-05-26T16:04:40.429-04:00  INFO 24960 --- [ventas-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-26T16:04:40.433-04:00  INFO 24960 --- [ventas-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@177ba3d6
+2026-05-26T16:04:40.434-04:00  INFO 24960 --- [ventas-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-26T16:04:40.589-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.changelog                      : Reading from ventas_db.databasechangelog
+2026-05-26T16:04:40.614-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
+2026-05-26T16:04:40.615-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.changelog                      : Reading from ventas_db.databasechangelog
+2026-05-26T16:04:40.617-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2026-05-26T16:04:40.618-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.util                           : Run:                          0
+2026-05-26T16:04:40.618-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.util                           : Previously run:               2
+2026-05-26T16:04:40.618-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.util                           : Filtered out:                 0
+2026-05-26T16:04:40.618-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.util                           : -------------------------------
+2026-05-26T16:04:40.618-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.util                           : Total change sets:            2
+2026-05-26T16:04:40.619-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.util                           : Update summary generated
+2026-05-26T16:04:40.619-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.command                        : Command execution complete
+2026-05-26T16:04:40.628-04:00  INFO 24960 --- [ventas-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-26T16:04:40.644-04:00  INFO 24960 --- [ventas-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-26T16:04:40.646-04:00  WARN 24960 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-05-26T16:04:40.647-04:00  INFO 24960 --- [ventas-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/ventas_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: ventas_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-26T16:04:40.681-04:00  INFO 24960 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-26T16:04:40.682-04:00  INFO 24960 --- [ventas-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T16:04:40.747-04:00  WARN 24960 --- [ventas-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-26T16:04:40.800-04:00  INFO 24960 --- [ventas-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8084 (http) with context path '/'
+2026-05-26T16:04:40.801-04:00  INFO 24960 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : Started VentasServiceApplication in 0.651 seconds (process running for 262.654)
+2026-05-26T16:04:40.803-04:00  INFO 24960 --- [ventas-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-26T16:08:07.403-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-26T16:08:07.403-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-26T16:08:07.404-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-05-26T16:08:07.430-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-1] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
+2026-05-26T16:09:15.166-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-5] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
+2026-05-26T16:09:27.481-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-7] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
+2026-05-26T16:09:31.972-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-8] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
+2026-05-26T16:10:02.902-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-6] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
+2026-05-26T16:10:55.906-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-9] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
+2026-05-26T16:12:38.424-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-1] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
+2026-05-26T16:12:45.147-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-4] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
+2026-05-26T16:13:28.272-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-3] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
+2026-05-26T16:43:53.972-04:00  INFO 24960 --- [ventas-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-26T16:43:53.979-04:00  INFO 24960 --- [ventas-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-26T16:43:53.982-04:00  INFO 24960 --- [ventas-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T16:43:53.984-04:00  INFO 24960 --- [ventas-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-05-26T16:43:53.986-04:00  INFO 24960 --- [ventas-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.

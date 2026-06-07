@@ -1,0 +1,52 @@
+2026-05-26T16:01:06.473-04:00  INFO 17532 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Starting CatalogoServiceApplication using Java 24.0.2 with PID 17532 (C:\Users\av-alumno\Downloads\titaniumarmor\catalogo-service\target\classes started by AV-Alumno in C:\Users\av-alumno\Downloads\titaniumarmor\catalogo-service)
+2026-05-26T16:01:06.473-04:00  INFO 17532 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-05-26T16:01:06.560-04:00  INFO 17532 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-26T16:01:06.571-04:00  INFO 17532 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2026-05-26T16:01:06.638-04:00  INFO 17532 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
+2026-05-26T16:01:06.641-04:00  INFO 17532 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-26T16:01:06.641-04:00  INFO 17532 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-26T16:01:06.658-04:00  INFO 17532 --- [catalogo-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 183 ms
+2026-05-26T16:01:06.674-04:00  INFO 17532 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-26T16:01:06.678-04:00  INFO 17532 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f078ff6
+2026-05-26T16:01:06.679-04:00  INFO 17532 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-26T16:01:06.821-04:00  INFO 17532 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
+2026-05-26T16:01:06.850-04:00  INFO 17532 --- [catalogo-service] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
+2026-05-26T16:01:06.852-04:00  INFO 17532 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
+2026-05-26T16:01:06.855-04:00  INFO 17532 --- [catalogo-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2026-05-26T16:01:06.855-04:00  INFO 17532 --- [catalogo-service] [restartedMain] liquibase.util                           : Run:                          0
+2026-05-26T16:01:06.856-04:00  INFO 17532 --- [catalogo-service] [restartedMain] liquibase.util                           : Previously run:               4
+2026-05-26T16:01:06.856-04:00  INFO 17532 --- [catalogo-service] [restartedMain] liquibase.util                           : Filtered out:                 0
+2026-05-26T16:01:06.856-04:00  INFO 17532 --- [catalogo-service] [restartedMain] liquibase.util                           : -------------------------------
+2026-05-26T16:01:06.856-04:00  INFO 17532 --- [catalogo-service] [restartedMain] liquibase.util                           : Total change sets:            4
+2026-05-26T16:01:06.857-04:00  INFO 17532 --- [catalogo-service] [restartedMain] liquibase.util                           : Update summary generated
+2026-05-26T16:01:06.857-04:00  INFO 17532 --- [catalogo-service] [restartedMain] liquibase.command                        : Command execution complete
+2026-05-26T16:01:06.865-04:00  INFO 17532 --- [catalogo-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-26T16:01:06.883-04:00  INFO 17532 --- [catalogo-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-26T16:01:06.886-04:00  WARN 17532 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-05-26T16:01:06.887-04:00  INFO 17532 --- [catalogo-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/catalogo_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: catalogo_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-26T16:01:06.924-04:00  INFO 17532 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-26T16:01:06.925-04:00  INFO 17532 --- [catalogo-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T16:01:06.972-04:00  WARN 17532 --- [catalogo-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-26T16:01:07.033-04:00  INFO 17532 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
+2026-05-26T16:01:07.035-04:00  INFO 17532 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Started CatalogoServiceApplication in 0.595 seconds (process running for 78.893)
+2026-05-26T16:01:07.037-04:00  INFO 17532 --- [catalogo-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-05-26T16:03:02.199-04:00  INFO 17532 --- [catalogo-service] [http-nio-8082-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-26T16:03:02.200-04:00  INFO 17532 --- [catalogo-service] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-26T16:03:02.204-04:00  INFO 17532 --- [catalogo-service] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-05-26T16:03:02.286-04:00  INFO 17532 --- [catalogo-service] [http-nio-8082-exec-3] c.t.c.service.ProductoService            : Listando productos
+2026-05-26T16:43:48.161-04:00  INFO 17532 --- [catalogo-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-26T16:43:48.171-04:00  INFO 17532 --- [catalogo-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-26T16:43:48.174-04:00  INFO 17532 --- [catalogo-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-26T16:43:48.175-04:00  INFO 17532 --- [catalogo-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-05-26T16:43:48.177-04:00  INFO 17532 --- [catalogo-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
