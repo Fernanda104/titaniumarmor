@@ -1,0 +1,41 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: 1
+      author: fernanda
+
+      changes:
+
+        - createTable:
+            tableName: envios
+
+            columns:
+
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: venta_id
+                  type: BIGINT
+
+              - column:
+                  name: direccion_entrega
+                  type: VARCHAR(255)
+
+              - column:
+                  name: empresa_transporte
+                  type: VARCHAR(100)
+
+              - column:
+                  name: numero_seguimiento
+                  type: VARCHAR(100)
+
+              - column:
+                  name: estado
+                  type: VARCHAR(50)
