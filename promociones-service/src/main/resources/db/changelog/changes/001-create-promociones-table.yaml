@@ -1,0 +1,108 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: 1
+      author: titanium
+
+      changes:
+
+        - createTable:
+            tableName: promociones
+
+            columns:
+
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: nombre
+                  type: VARCHAR(100)
+
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: porcentaje_descuento
+                  type: DOUBLE
+
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: fecha_inicio
+                  type: DATE
+
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: fecha_fin
+                  type: DATE
+
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: activa
+                  type: BOOLEAN
+
+                  constraints:
+                    nullable: false
+
+  - changeSet:
+      id: 2
+      author: titanium
+
+      changes:
+
+        - insert:
+            tableName: promociones
+            columns:
+              - column:
+                  name: nombre
+                  value: "CyberDay"
+
+              - column:
+                  name: porcentaje_descuento
+                  valueNumeric: 20
+
+              - column:
+                  name: fecha_inicio
+                  valueDate: "2026-06-01"
+
+              - column:
+                  name: fecha_fin
+                  valueDate: "2026-06-10"
+
+              - column:
+                  name: activa
+                  valueBoolean: true
+
+        - insert:
+            tableName: promociones
+            columns:
+              - column:
+                  name: nombre
+                  value: "BlackFriday"
+
+              - column:
+                  name: porcentaje_descuento
+                  valueNumeric: 35
+
+              - column:
+                  name: fecha_inicio
+                  valueDate: "2026-11-20"
+
+              - column:
+                  name: fecha_fin
+                  valueDate: "2026-11-30"
+
+              - column:
+                  name: activa
+                  valueBoolean: true
