@@ -1,32 +1,190 @@
-2026-06-17T22:11:03.620-04:00  INFO 17116 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Starting CatalogoServiceApplication using Java 21.0.11 with PID 17116 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service)
-2026-06-17T22:11:03.642-04:00  INFO 17116 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : The following 1 profile is active: "dev"
-2026-06-17T22:11:03.768-04:00  INFO 17116 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-06-17T22:11:03.770-04:00  INFO 17116 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-06-17T22:11:06.337-04:00  INFO 17116 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-17T22:11:06.526-04:00  INFO 17116 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 163 ms. Found 2 JPA repository interfaces.
-2026-06-17T22:11:08.010-04:00  INFO 17116 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9092 (http)
-2026-06-17T22:11:08.072-04:00  INFO 17116 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-17T22:11:08.076-04:00  INFO 17116 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-17T22:11:08.216-04:00  INFO 17116 --- [catalogo-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4441 ms
-2026-06-17T22:11:08.617-04:00  INFO 17116 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-17T22:11:09.180-04:00  INFO 17116 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e15e540
-2026-06-17T22:11:09.187-04:00  INFO 17116 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-17T22:11:14.658-04:00  INFO 17116 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
-2026-06-17T22:11:14.857-04:00  INFO 17116 --- [catalogo-service] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
-2026-06-17T22:11:14.867-04:00  INFO 17116 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
-2026-06-17T22:11:15.140-04:00  INFO 17116 --- [catalogo-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2026-06-17T22:11:15.227-04:00  INFO 17116 --- [catalogo-service] [restartedMain] liquibase.util                           : Run:                          0
-2026-06-17T22:11:15.235-04:00  INFO 17116 --- [catalogo-service] [restartedMain] liquibase.util                           : Previously run:               2
-2026-06-17T22:11:15.244-04:00  INFO 17116 --- [catalogo-service] [restartedMain] liquibase.util                           : Filtered out:                 0
-2026-06-17T22:11:15.261-04:00  INFO 17116 --- [catalogo-service] [restartedMain] liquibase.util                           : -------------------------------
-2026-06-17T22:11:15.289-04:00  INFO 17116 --- [catalogo-service] [restartedMain] liquibase.util                           : Total change sets:            2
-2026-06-17T22:11:15.323-04:00  INFO 17116 --- [catalogo-service] [restartedMain] liquibase.util                           : Update summary generated
-2026-06-17T22:11:15.341-04:00  INFO 17116 --- [catalogo-service] [restartedMain] liquibase.command                        : Command execution complete
-2026-06-17T22:11:15.766-04:00  INFO 17116 --- [catalogo-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-17T22:11:16.066-04:00  INFO 17116 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-17T22:11:18.606-04:00  INFO 17116 --- [catalogo-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-17T22:11:18.833-04:00  WARN 17116 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-06-17T22:11:18.888-04:00  INFO 17116 --- [catalogo-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-06-18T16:21:43.040-04:00  INFO 16812 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Starting CatalogoServiceApplication using Java 21.0.11 with PID 16812 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service)
+2026-06-18T16:21:43.054-04:00  INFO 16812 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : The following 1 profile is active: "dev"
+2026-06-18T16:21:43.150-04:00  INFO 16812 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-18T16:21:43.151-04:00  INFO 16812 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-18T16:21:45.304-04:00  INFO 16812 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-18T16:21:45.464-04:00  INFO 16812 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139 ms. Found 2 JPA repository interfaces.
+2026-06-18T16:21:46.921-04:00  INFO 16812 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9092 (http)
+2026-06-18T16:21:46.985-04:00  INFO 16812 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-18T16:21:46.993-04:00  INFO 16812 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-18T16:21:47.187-04:00  INFO 16812 --- [catalogo-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4034 ms
+2026-06-18T16:21:47.695-04:00  INFO 16812 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-18T16:21:48.260-04:00  INFO 16812 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e15e540
+2026-06-18T16:21:48.269-04:00  INFO 16812 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-18T16:21:52.134-04:00  INFO 16812 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: catalogo_db.databasechangelog
+2026-06-18T16:26:09.785-04:00  INFO 2436 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Starting CatalogoServiceApplication using Java 21.0.11 with PID 2436 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service)
+2026-06-18T16:26:09.790-04:00  INFO 2436 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : The following 1 profile is active: "dev"
+2026-06-18T16:26:09.875-04:00  INFO 2436 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-18T16:26:09.875-04:00  INFO 2436 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-18T16:26:11.093-04:00  INFO 2436 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-18T16:26:11.177-04:00  INFO 2436 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2026-06-18T16:26:12.139-04:00  INFO 2436 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9092 (http)
+2026-06-18T16:26:12.168-04:00  INFO 2436 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-18T16:26:12.170-04:00  INFO 2436 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-18T16:26:12.250-04:00  INFO 2436 --- [catalogo-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2372 ms
+2026-06-18T16:26:12.510-04:00  INFO 2436 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-18T16:26:12.787-04:00  INFO 2436 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2bad5ee
+2026-06-18T16:26:12.792-04:00  INFO 2436 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-18T16:26:15.315-04:00  INFO 2436 --- [catalogo-service] [restartedMain] liquibase.command                        : Logging exception.
+2026-06-18T16:26:15.317-04:00  INFO 2436 --- [catalogo-service] [restartedMain] liquibase.ui                             : ERROR: Exception Details
+2026-06-18T16:26:15.318-04:00  INFO 2436 --- [catalogo-service] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Class:  SQLSyntaxErrorException
+2026-06-18T16:26:15.318-04:00  INFO 2436 --- [catalogo-service] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Reason:  Table 'catalogo_db.databasechangelog' doesn't exist in engine
+2026-06-18T16:26:15.318-04:00  INFO 2436 --- [catalogo-service] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Source:  MySQL 5.5.5-10.4.32-MariaDB
+2026-06-18T16:26:15.318-04:00  INFO 2436 --- [catalogo-service] [restartedMain] liquibase.command                        : Command execution complete
+2026-06-18T16:26:15.324-04:00  WARN 2436 --- [catalogo-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/liquibase/autoconfigure/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/db.changelog-master.yaml : liquibase.exception.DatabaseException: java.sql.SQLSyntaxErrorException: Table 'catalogo_db.databasechangelog' doesn't exist in engine
+2026-06-18T16:26:15.330-04:00  INFO 2436 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-18T16:26:15.341-04:00  INFO 2436 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-18T16:26:15.348-04:00  INFO 2436 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-18T16:26:15.365-04:00  INFO 2436 --- [catalogo-service] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-18T16:26:15.405-04:00 ERROR 2436 --- [catalogo-service] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/liquibase/autoconfigure/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/db.changelog-master.yaml : liquibase.exception.DatabaseException: java.sql.SQLSyntaxErrorException: Table 'catalogo_db.databasechangelog' doesn't exist in engine
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977) ~[spring-context-7.0.7.jar:7.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.7.jar:7.0.7]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.6.jar:4.0.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.6.jar:4.0.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.6.jar:4.0.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.6.jar:4.0.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.6.jar:4.0.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.6.jar:4.0.6]
+	at com.titaniumarmor.catalogo_service.CatalogoServiceApplication.main(CatalogoServiceApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.6.jar:4.0.6]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/liquibase/autoconfigure/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/db.changelog-master.yaml : liquibase.exception.DatabaseException: java.sql.SQLSyntaxErrorException: Table 'catalogo_db.databasechangelog' doesn't exist in engine
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:309) ~[spring-beans-7.0.7.jar:7.0.7]
+	... 13 common frames omitted
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/db.changelog-master.yaml : liquibase.exception.DatabaseException: java.sql.SQLSyntaxErrorException: Table 'catalogo_db.databasechangelog' doesn't exist in engine
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:289) ~[liquibase-core-5.0.2.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813) ~[spring-beans-7.0.7.jar:7.0.7]
+	... 20 common frames omitted
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/db.changelog-master.yaml : liquibase.exception.DatabaseException: java.sql.SQLSyntaxErrorException: Table 'catalogo_db.databasechangelog' doesn't exist in engine
+	at liquibase.command.CommandScope.lambda$execute$5(CommandScope.java:325) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:250) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:226) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:257) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:241) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:250) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:240) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:219) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1366) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:205) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:188) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:327) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:279) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:241) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:250) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:240) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:219) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:272) ~[liquibase-core-5.0.2.jar:na]
+	... 22 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Error parsing classpath:/db/changelog/db.changelog-master.yaml : liquibase.exception.DatabaseException: java.sql.SQLSyntaxErrorException: Table 'catalogo_db.databasechangelog' doesn't exist in engine
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:95) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.lambda$getDatabaseChangeLog$0(DatabaseChangelogCommandStep.java:143) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:241) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:250) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:240) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:219) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:307) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:311) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.getDatabaseChangeLog(DatabaseChangelogCommandStep.java:138) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:84) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.command.CommandScope.lambda$execute$5(CommandScope.java:269) ~[liquibase-core-5.0.2.jar:na]
+	... 40 common frames omitted
+Caused by: liquibase.exception.UnexpectedLiquibaseException: liquibase.exception.DatabaseException: java.sql.SQLSyntaxErrorException: Table 'catalogo_db.databasechangelog' doesn't exist in engine
+	at liquibase.changelog.StandardChangeLogHistoryService.init(StandardChangeLogHistoryService.java:117) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:1181) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.handleInclude(DatabaseChangeLog.java:683) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.handleChildNodeHelper(DatabaseChangeLog.java:486) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:470) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:437) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:89) ~[liquibase-core-5.0.2.jar:na]
+	... 50 common frames omitted
+Caused by: liquibase.exception.DatabaseException: java.sql.SQLSyntaxErrorException: Table 'catalogo_db.databasechangelog' doesn't exist in engine
+	at liquibase.snapshot.ResultSetCache.get(ResultSetCache.java:100) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.JdbcDatabaseSnapshot$CachingDatabaseMetaData.getColumns(JdbcDatabaseSnapshot.java:398) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.jvm.ColumnSnapshotGenerator.addTo(ColumnSnapshotGenerator.java:167) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.jvm.JdbcSnapshotGenerator.snapshot(JdbcSnapshotGenerator.java:76) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.SnapshotGeneratorChain.snapshot(SnapshotGeneratorChain.java:72) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.DatabaseSnapshot.include(DatabaseSnapshot.java:324) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.DatabaseSnapshot.init(DatabaseSnapshot.java:117) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.DatabaseSnapshot.<init>(DatabaseSnapshot.java:66) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.JdbcDatabaseSnapshot.<init>(JdbcDatabaseSnapshot.java:37) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.SnapshotGeneratorFactory.createSnapshot(SnapshotGeneratorFactory.java:343) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.SnapshotGeneratorFactory.createSnapshot(SnapshotGeneratorFactory.java:372) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.SnapshotGeneratorFactory.getDatabaseChangeLogTable(SnapshotGeneratorFactory.java:383) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.changelog.StandardChangeLogHistoryService.init(StandardChangeLogHistoryService.java:114) ~[liquibase-core-5.0.2.jar:na]
+	... 56 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Table 'catalogo_db.databasechangelog' doesn't exist in engine
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.7.0.jar:9.7.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.7.0.jar:9.7.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1318) ~[mysql-connector-j-9.7.0.jar:9.7.0]
+	at com.mysql.cj.jdbc.DatabaseMetaDataMysqlSchema.getColumns(DatabaseMetaDataMysqlSchema.java:1486) ~[mysql-connector-j-9.7.0.jar:9.7.0]
+	at com.zaxxer.hikari.pool.ProxyDatabaseMetaData.getColumns(ProxyDatabaseMetaData.java:129) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyDatabaseMetaData.getColumns(HikariProxyDatabaseMetaData.java) ~[HikariCP-7.0.2.jar:na]
+	at liquibase.snapshot.JdbcDatabaseSnapshot$CachingDatabaseMetaData$GetColumnResultSetCache.fastFetchQuery(JdbcDatabaseSnapshot.java:470) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.ResultSetCache$SingleResultSetExtractor.fastFetch(ResultSetCache.java:338) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.ResultSetCache.get(ResultSetCache.java:71) ~[liquibase-core-5.0.2.jar:na]
+	... 68 common frames omitted
+
+2026-06-18T16:33:47.659-04:00  INFO 10252 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Starting CatalogoServiceApplication using Java 21.0.11 with PID 10252 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service)
+2026-06-18T16:33:47.661-04:00  INFO 10252 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : The following 1 profile is active: "dev"
+2026-06-18T16:33:47.729-04:00  INFO 10252 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-18T16:33:47.732-04:00  INFO 10252 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-18T16:33:48.914-04:00  INFO 10252 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-18T16:33:48.993-04:00  INFO 10252 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2026-06-18T16:33:49.728-04:00  INFO 10252 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9092 (http)
+2026-06-18T16:33:49.751-04:00  INFO 10252 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-18T16:33:49.751-04:00  INFO 10252 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-18T16:33:49.822-04:00  INFO 10252 --- [catalogo-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2090 ms
+2026-06-18T16:33:50.057-04:00  INFO 10252 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-18T16:33:50.403-04:00  INFO 10252 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75074e0f
+2026-06-18T16:33:50.407-04:00  INFO 10252 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-18T16:33:52.698-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: catalogo_db.databasechangelog
+2026-06-18T16:33:52.892-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
+2026-06-18T16:33:52.933-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
+2026-06-18T16:33:52.974-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
+2026-06-18T16:33:53.087-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2026-06-18T16:33:53.090-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.command                        : Using deploymentId: 1814830034
+2026-06-18T16:33:53.098-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
+2026-06-18T16:33:53.135-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/001-create-categorias.yaml::1::cristopher
+2026-06-18T16:33:53.156-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_CATEGORIAS' ignored for PRIMARY key.
+2026-06-18T16:33:53.158-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Table categorias created
+2026-06-18T16:33:53.165-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/001-create-categorias.yaml::1::cristopher ran successfully in 24ms
+2026-06-18T16:33:53.187-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-productos.yaml::2::cristopher
+2026-06-18T16:33:53.205-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_PRODUCTOS' ignored for PRIMARY key.
+2026-06-18T16:33:53.207-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Table productos created
+2026-06-18T16:33:53.278-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Foreign key constraint added to productos (categoria_id)
+2026-06-18T16:33:53.284-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-productos.yaml::2::cristopher ran successfully in 92ms
+2026-06-18T16:33:53.304-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2026-06-18T16:33:53.305-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.util                           : Run:                          2
+2026-06-18T16:33:53.306-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.util                           : Previously run:               0
+2026-06-18T16:33:53.306-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.util                           : Filtered out:                 0
+2026-06-18T16:33:53.308-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.util                           : -------------------------------
+2026-06-18T16:33:53.309-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.util                           : Total change sets:            2
+2026-06-18T16:33:53.314-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.util                           : Update summary generated
+2026-06-18T16:33:53.324-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.command                        : Update command completed successfully.
+2026-06-18T16:33:53.324-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 0
+2026-06-18T16:33:53.331-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2026-06-18T16:33:53.335-04:00  INFO 10252 --- [catalogo-service] [restartedMain] liquibase.command                        : Command execution complete
+2026-06-18T16:33:53.544-04:00  INFO 10252 --- [catalogo-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-18T16:33:53.708-04:00  INFO 10252 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-18T16:33:54.925-04:00  INFO 10252 --- [catalogo-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-18T16:33:55.083-04:00  WARN 10252 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-18T16:33:55.122-04:00  INFO 10252 --- [catalogo-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/catalogo_db?createDatabaseIfNotExist=true]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -38,57 +196,57 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-06-17T22:11:22.465-04:00  INFO 17116 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-17T22:11:22.487-04:00  INFO 17116 --- [catalogo-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-17T22:11:22.802-04:00  INFO 17116 --- [catalogo-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-17T22:11:23.926-04:00  WARN 17116 --- [catalogo-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-17T22:11:26.039-04:00  INFO 17116 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9092 (http) with context path '/'
-2026-06-17T22:11:26.054-04:00  INFO 17116 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Started CatalogoServiceApplication in 23.584 seconds (process running for 24.695)
-2026-06-17T22:28:11.966-04:00  INFO 328 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Starting CatalogoServiceApplication using Java 21.0.11 with PID 328 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service)
-2026-06-17T22:28:11.971-04:00  INFO 328 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : The following 1 profile is active: "dev"
-2026-06-17T22:28:12.074-04:00  INFO 328 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-06-17T22:28:12.078-04:00  INFO 328 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-06-17T22:28:13.348-04:00  INFO 328 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-17T22:28:13.439-04:00  INFO 328 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 2 JPA repository interfaces.
-2026-06-17T22:28:14.437-04:00  INFO 328 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9092 (http)
-2026-06-17T22:28:14.467-04:00  INFO 328 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-17T22:28:14.469-04:00  INFO 328 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-17T22:28:14.551-04:00  INFO 328 --- [catalogo-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2467 ms
-2026-06-17T22:28:14.840-04:00  INFO 328 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-17T22:28:15.260-04:00  INFO 328 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75074e0f
-2026-06-17T22:28:15.265-04:00  INFO 328 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-17T22:28:18.035-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: catalogo_db.databasechangelog
-2026-06-17T22:28:18.384-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
-2026-06-17T22:28:18.413-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
-2026-06-17T22:28:18.456-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
-2026-06-17T22:28:18.581-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
-2026-06-17T22:28:18.582-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.command                        : Using deploymentId: 1749694812
-2026-06-17T22:28:18.588-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
-2026-06-17T22:28:18.623-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/001-create-categorias.yaml::1::cristopher
-2026-06-17T22:28:18.642-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_CATEGORIAS' ignored for PRIMARY key.
-2026-06-17T22:28:18.642-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Table categorias created
-2026-06-17T22:28:18.646-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/001-create-categorias.yaml::1::cristopher ran successfully in 19ms
-2026-06-17T22:28:18.661-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-productos.yaml::2::cristopher
-2026-06-17T22:28:18.679-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_PRODUCTOS' ignored for PRIMARY key.
-2026-06-17T22:28:18.681-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Table productos created
-2026-06-17T22:28:18.739-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Foreign key constraint added to productos (categoria_id)
-2026-06-17T22:28:18.741-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-productos.yaml::2::cristopher ran successfully in 80ms
-2026-06-17T22:28:18.754-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2026-06-17T22:28:18.757-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.util                           : Run:                          2
-2026-06-17T22:28:18.757-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.util                           : Previously run:               0
-2026-06-17T22:28:18.759-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.util                           : Filtered out:                 0
-2026-06-17T22:28:18.759-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.util                           : -------------------------------
-2026-06-17T22:28:18.759-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.util                           : Total change sets:            2
-2026-06-17T22:28:18.760-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.util                           : Update summary generated
-2026-06-17T22:28:18.766-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.command                        : Update command completed successfully.
-2026-06-17T22:28:18.766-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 0
-2026-06-17T22:28:18.771-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
-2026-06-17T22:28:18.777-04:00  INFO 328 --- [catalogo-service] [restartedMain] liquibase.command                        : Command execution complete
-2026-06-17T22:28:18.903-04:00  INFO 328 --- [catalogo-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-17T22:28:18.990-04:00  INFO 328 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-17T22:28:19.876-04:00  INFO 328 --- [catalogo-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-17T22:28:20.016-04:00  WARN 328 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-06-17T22:28:20.052-04:00  INFO 328 --- [catalogo-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-06-18T16:33:57.011-04:00  INFO 10252 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-18T16:33:57.027-04:00  INFO 10252 --- [catalogo-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-18T16:33:57.190-04:00  INFO 10252 --- [catalogo-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-18T16:33:57.843-04:00  WARN 10252 --- [catalogo-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-18T16:33:58.766-04:00  INFO 10252 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9092 (http) with context path '/'
+2026-06-18T16:33:58.779-04:00  INFO 10252 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Started CatalogoServiceApplication in 11.775 seconds (process running for 12.284)
+2026-06-18T16:36:12.683-04:00  INFO 20812 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Starting CatalogoServiceApplication using Java 21.0.11 with PID 20812 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service)
+2026-06-18T16:36:12.692-04:00  INFO 20812 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : The following 1 profile is active: "dev"
+2026-06-18T16:36:12.807-04:00  INFO 20812 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-18T16:36:12.807-04:00  INFO 20812 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-18T16:36:14.177-04:00  INFO 20812 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-18T16:36:14.279-04:00  INFO 20812 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+2026-06-18T16:36:15.276-04:00  INFO 20812 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9092 (http)
+2026-06-18T16:36:15.308-04:00  INFO 20812 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-18T16:36:15.308-04:00  INFO 20812 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-18T16:36:15.397-04:00  INFO 20812 --- [catalogo-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2586 ms
+2026-06-18T16:36:15.678-04:00  INFO 20812 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-18T16:36:16.115-04:00  INFO 20812 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75074e0f
+2026-06-18T16:36:16.117-04:00  INFO 20812 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-18T16:36:18.550-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: catalogo_db.databasechangelog
+2026-06-18T16:36:18.848-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
+2026-06-18T16:36:18.875-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
+2026-06-18T16:36:18.929-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
+2026-06-18T16:36:19.082-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2026-06-18T16:36:19.086-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.command                        : Using deploymentId: 1814975654
+2026-06-18T16:36:19.089-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
+2026-06-18T16:36:19.125-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/001-create-categorias.yaml::1::cristopher
+2026-06-18T16:36:19.147-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_CATEGORIAS' ignored for PRIMARY key.
+2026-06-18T16:36:19.147-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Table categorias created
+2026-06-18T16:36:19.147-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/001-create-categorias.yaml::1::cristopher ran successfully in 20ms
+2026-06-18T16:36:19.165-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-productos.yaml::2::cristopher
+2026-06-18T16:36:19.180-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_PRODUCTOS' ignored for PRIMARY key.
+2026-06-18T16:36:19.180-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Table productos created
+2026-06-18T16:36:19.229-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Foreign key constraint added to productos (categoria_id)
+2026-06-18T16:36:19.233-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-productos.yaml::2::cristopher ran successfully in 64ms
+2026-06-18T16:36:19.247-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2026-06-18T16:36:19.249-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.util                           : Run:                          2
+2026-06-18T16:36:19.249-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.util                           : Previously run:               0
+2026-06-18T16:36:19.252-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.util                           : Filtered out:                 0
+2026-06-18T16:36:19.252-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.util                           : -------------------------------
+2026-06-18T16:36:19.252-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.util                           : Total change sets:            2
+2026-06-18T16:36:19.252-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.util                           : Update summary generated
+2026-06-18T16:36:19.262-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.command                        : Update command completed successfully.
+2026-06-18T16:36:19.262-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 0
+2026-06-18T16:36:19.266-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2026-06-18T16:36:19.268-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.command                        : Command execution complete
+2026-06-18T16:36:19.456-04:00  INFO 20812 --- [catalogo-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-18T16:36:19.602-04:00  INFO 20812 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-18T16:36:20.667-04:00  INFO 20812 --- [catalogo-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-18T16:36:20.814-04:00  WARN 20812 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-18T16:36:20.853-04:00  INFO 20812 --- [catalogo-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/catalogo_db?createDatabaseIfNotExist=true]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -100,57 +258,44 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-06-17T22:28:22.044-04:00  INFO 328 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-17T22:28:22.070-04:00  INFO 328 --- [catalogo-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-17T22:28:22.248-04:00  INFO 328 --- [catalogo-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-17T22:28:22.967-04:00  WARN 328 --- [catalogo-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-17T22:28:23.996-04:00  INFO 328 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9092 (http) with context path '/'
-2026-06-17T22:28:24.010-04:00  INFO 328 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Started CatalogoServiceApplication in 12.875 seconds (process running for 13.719)
-2026-06-17T22:37:20.010-04:00  INFO 6596 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Starting CatalogoServiceApplication using Java 21.0.11 with PID 6596 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service)
-2026-06-17T22:37:20.016-04:00  INFO 6596 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : The following 1 profile is active: "dev"
-2026-06-17T22:37:20.106-04:00  INFO 6596 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-06-17T22:37:20.106-04:00  INFO 6596 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-06-17T22:37:21.566-04:00  INFO 6596 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-17T22:37:21.696-04:00  INFO 6596 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 2 JPA repository interfaces.
-2026-06-17T22:37:22.830-04:00  INFO 6596 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9092 (http)
-2026-06-17T22:37:22.863-04:00  INFO 6596 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-17T22:37:22.865-04:00  INFO 6596 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-17T22:37:22.952-04:00  INFO 6596 --- [catalogo-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2844 ms
-2026-06-17T22:37:23.297-04:00  INFO 6596 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-17T22:37:23.791-04:00  INFO 6596 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75074e0f
-2026-06-17T22:37:23.797-04:00  INFO 6596 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-17T22:37:26.145-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: catalogo_db.databasechangelog
-2026-06-17T22:37:26.416-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
-2026-06-17T22:37:26.451-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
-2026-06-17T22:37:26.500-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
-2026-06-17T22:37:26.668-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
-2026-06-17T22:37:26.670-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.command                        : Using deploymentId: 1750243238
-2026-06-17T22:37:26.676-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
-2026-06-17T22:37:26.714-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/001-create-categorias.yaml::1::cristopher
-2026-06-17T22:37:26.739-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_CATEGORIAS' ignored for PRIMARY key.
-2026-06-17T22:37:26.740-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Table categorias created
-2026-06-17T22:37:26.747-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/001-create-categorias.yaml::1::cristopher ran successfully in 27ms
-2026-06-17T22:37:26.767-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-productos.yaml::2::cristopher
-2026-06-17T22:37:26.779-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_PRODUCTOS' ignored for PRIMARY key.
-2026-06-17T22:37:26.779-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Table productos created
-2026-06-17T22:37:26.847-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Foreign key constraint added to productos (categoria_id)
-2026-06-17T22:37:26.851-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-productos.yaml::2::cristopher ran successfully in 84ms
-2026-06-17T22:37:26.866-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2026-06-17T22:37:26.866-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.util                           : Run:                          2
-2026-06-17T22:37:26.869-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.util                           : Previously run:               0
-2026-06-17T22:37:26.870-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.util                           : Filtered out:                 0
-2026-06-17T22:37:26.872-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.util                           : -------------------------------
-2026-06-17T22:37:26.872-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.util                           : Total change sets:            2
-2026-06-17T22:37:26.876-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.util                           : Update summary generated
-2026-06-17T22:37:26.880-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.command                        : Update command completed successfully.
-2026-06-17T22:37:26.880-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 0
-2026-06-17T22:37:26.885-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
-2026-06-17T22:37:26.891-04:00  INFO 6596 --- [catalogo-service] [restartedMain] liquibase.command                        : Command execution complete
-2026-06-17T22:37:27.029-04:00  INFO 6596 --- [catalogo-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-17T22:37:27.113-04:00  INFO 6596 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-17T22:37:28.462-04:00  INFO 6596 --- [catalogo-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-17T22:37:28.619-04:00  WARN 6596 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-06-17T22:37:28.654-04:00  INFO 6596 --- [catalogo-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-06-18T16:36:22.877-04:00  INFO 20812 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-18T16:36:22.924-04:00  INFO 20812 --- [catalogo-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-18T16:36:23.124-04:00  INFO 20812 --- [catalogo-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-18T16:36:23.923-04:00  WARN 20812 --- [catalogo-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-18T16:36:25.042-04:00  INFO 20812 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9092 (http) with context path '/'
+2026-06-18T16:36:25.050-04:00  INFO 20812 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Started CatalogoServiceApplication in 13.136 seconds (process running for 13.809)
+2026-06-18T16:40:00.431-04:00  INFO 20812 --- [catalogo-service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-06-18T16:40:00.480-04:00  INFO 20812 --- [catalogo-service] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-18T16:40:00.497-04:00  INFO 20812 --- [catalogo-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-18T16:40:00.507-04:00  INFO 20812 --- [catalogo-service] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-18T16:40:00.527-04:00  INFO 20812 --- [catalogo-service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-18T16:40:00.542-04:00  INFO 20812 --- [catalogo-service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-18T16:40:00.722-04:00  INFO 20812 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Starting CatalogoServiceApplication using Java 21.0.11 with PID 20812 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service)
+2026-06-18T16:40:00.722-04:00  INFO 20812 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : The following 1 profile is active: "dev"
+2026-06-18T16:40:01.116-04:00  INFO 20812 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-18T16:40:01.151-04:00  INFO 20812 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+2026-06-18T16:40:01.318-04:00  INFO 20812 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9092 (http)
+2026-06-18T16:40:01.318-04:00  INFO 20812 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-18T16:40:01.333-04:00  INFO 20812 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-18T16:40:01.356-04:00  INFO 20812 --- [catalogo-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 634 ms
+2026-06-18T16:40:01.396-04:00  INFO 20812 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-06-18T16:40:01.402-04:00  INFO 20812 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@69aa8c11
+2026-06-18T16:40:01.404-04:00  INFO 20812 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-06-18T16:40:01.640-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
+2026-06-18T16:40:01.657-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
+2026-06-18T16:40:01.657-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
+2026-06-18T16:40:01.671-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2026-06-18T16:40:01.671-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.util                           : Run:                          0
+2026-06-18T16:40:01.671-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.util                           : Previously run:               2
+2026-06-18T16:40:01.671-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.util                           : Filtered out:                 0
+2026-06-18T16:40:01.673-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.util                           : -------------------------------
+2026-06-18T16:40:01.673-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.util                           : Total change sets:            2
+2026-06-18T16:40:01.673-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.util                           : Update summary generated
+2026-06-18T16:40:01.675-04:00  INFO 20812 --- [catalogo-service] [restartedMain] liquibase.command                        : Command execution complete
+2026-06-18T16:40:01.684-04:00  INFO 20812 --- [catalogo-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-18T16:40:01.713-04:00  INFO 20812 --- [catalogo-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-18T16:40:01.732-04:00  WARN 20812 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-18T16:40:01.733-04:00  INFO 20812 --- [catalogo-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/catalogo_db?createDatabaseIfNotExist=true]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -162,138 +307,9 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-06-17T22:37:30.839-04:00  INFO 6596 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-17T22:37:30.855-04:00  INFO 6596 --- [catalogo-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-17T22:37:31.025-04:00  INFO 6596 --- [catalogo-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-17T22:37:31.807-04:00  WARN 6596 --- [catalogo-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-17T22:37:32.923-04:00  INFO 6596 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9092 (http) with context path '/'
-2026-06-17T22:37:32.938-04:00  INFO 6596 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Started CatalogoServiceApplication in 13.682 seconds (process running for 14.487)
-2026-06-17T22:44:27.063-04:00  INFO 13996 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Starting CatalogoServiceApplication using Java 21.0.11 with PID 13996 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service)
-2026-06-17T22:44:27.075-04:00  INFO 13996 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : The following 1 profile is active: "dev"
-2026-06-17T22:44:27.216-04:00  INFO 13996 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-06-17T22:44:27.216-04:00  INFO 13996 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-06-17T22:44:28.620-04:00  INFO 13996 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-17T22:44:28.727-04:00  INFO 13996 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
-2026-06-17T22:44:29.757-04:00  INFO 13996 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9092 (http)
-2026-06-17T22:44:29.788-04:00  INFO 13996 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-17T22:44:29.788-04:00  INFO 13996 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-17T22:44:29.879-04:00  INFO 13996 --- [catalogo-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2661 ms
-2026-06-17T22:44:30.186-04:00  INFO 13996 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-17T22:44:30.612-04:00  INFO 13996 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75074e0f
-2026-06-17T22:44:30.617-04:00  INFO 13996 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-17T22:44:33.081-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: catalogo_db.databasechangelog
-2026-06-17T22:44:33.348-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
-2026-06-17T22:44:33.392-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
-2026-06-17T22:44:33.452-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
-2026-06-17T22:44:33.605-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
-2026-06-17T22:44:33.607-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.command                        : Using deploymentId: 1750670157
-2026-06-17T22:44:33.608-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
-2026-06-17T22:44:33.645-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/001-create-categorias.yaml::1::cristopher
-2026-06-17T22:44:33.661-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_CATEGORIAS' ignored for PRIMARY key.
-2026-06-17T22:44:33.661-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Table categorias created
-2026-06-17T22:44:33.669-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/001-create-categorias.yaml::1::cristopher ran successfully in 22ms
-2026-06-17T22:44:33.684-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-productos.yaml::2::cristopher
-2026-06-17T22:44:33.699-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_PRODUCTOS' ignored for PRIMARY key.
-2026-06-17T22:44:33.700-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Table productos created
-2026-06-17T22:44:33.761-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Foreign key constraint added to productos (categoria_id)
-2026-06-17T22:44:33.765-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-productos.yaml::2::cristopher ran successfully in 79ms
-2026-06-17T22:44:33.783-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2026-06-17T22:44:33.783-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.util                           : Run:                          2
-2026-06-17T22:44:33.783-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.util                           : Previously run:               0
-2026-06-17T22:44:33.786-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.util                           : Filtered out:                 0
-2026-06-17T22:44:33.786-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.util                           : -------------------------------
-2026-06-17T22:44:33.786-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.util                           : Total change sets:            2
-2026-06-17T22:44:33.791-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.util                           : Update summary generated
-2026-06-17T22:44:33.797-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.command                        : Update command completed successfully.
-2026-06-17T22:44:33.799-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 0
-2026-06-17T22:44:33.806-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
-2026-06-17T22:44:33.810-04:00  INFO 13996 --- [catalogo-service] [restartedMain] liquibase.command                        : Command execution complete
-2026-06-17T22:44:34.008-04:00  INFO 13996 --- [catalogo-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-17T22:44:34.122-04:00  INFO 13996 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-17T22:44:35.012-04:00  INFO 13996 --- [catalogo-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-17T22:44:35.162-04:00  WARN 13996 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-06-17T22:44:35.203-04:00  INFO 13996 --- [catalogo-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:mysql://localhost:3306/catalogo_db?createDatabaseIfNotExist=true]
-	Database driver: MySQL Connector/J
-	Database dialect: MySQLDialect
-	Database version: 5.5.5
-	Default catalog/schema: catalogo_db/undefined
-	Autocommit mode: undefined/unknown
-	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-17T22:44:37.076-04:00  INFO 13996 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-17T22:44:37.099-04:00  INFO 13996 --- [catalogo-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-17T22:44:37.353-04:00  INFO 13996 --- [catalogo-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-17T22:44:38.176-04:00  WARN 13996 --- [catalogo-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-17T22:44:39.144-04:00  INFO 13996 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9092 (http) with context path '/'
-2026-06-17T22:44:39.154-04:00  INFO 13996 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Started CatalogoServiceApplication in 12.888 seconds (process running for 13.595)
-2026-06-17T22:47:52.857-04:00  INFO 17332 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Starting CatalogoServiceApplication using Java 21.0.11 with PID 17332 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\catalogo-service)
-2026-06-17T22:47:52.863-04:00  INFO 17332 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : The following 1 profile is active: "dev"
-2026-06-17T22:47:52.960-04:00  INFO 17332 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-06-17T22:47:52.963-04:00  INFO 17332 --- [catalogo-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-06-17T22:47:54.219-04:00  INFO 17332 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-17T22:47:54.310-04:00  INFO 17332 --- [catalogo-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
-2026-06-17T22:47:55.331-04:00  INFO 17332 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9092 (http)
-2026-06-17T22:47:55.362-04:00  INFO 17332 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-17T22:47:55.362-04:00  INFO 17332 --- [catalogo-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-17T22:47:55.451-04:00  INFO 17332 --- [catalogo-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2487 ms
-2026-06-17T22:47:55.738-04:00  INFO 17332 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-17T22:47:56.179-04:00  INFO 17332 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@268f6064
-2026-06-17T22:47:56.187-04:00  INFO 17332 --- [catalogo-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-17T22:47:59.612-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: catalogo_db.databasechangelog
-2026-06-17T22:47:59.812-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
-2026-06-17T22:47:59.841-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
-2026-06-17T22:47:59.886-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
-2026-06-17T22:48:00.009-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
-2026-06-17T22:48:00.011-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.command                        : Using deploymentId: 1750875709
-2026-06-17T22:48:00.015-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Reading from catalogo_db.databasechangelog
-2026-06-17T22:48:00.054-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/001-create-categorias.yaml::1::cristopher
-2026-06-17T22:48:00.071-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_CATEGORIAS' ignored for PRIMARY key.
-2026-06-17T22:48:00.071-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Table categorias created
-2026-06-17T22:48:00.078-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/001-create-categorias.yaml::1::cristopher ran successfully in 15ms
-2026-06-17T22:48:00.094-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-productos.yaml::2::cristopher
-2026-06-17T22:48:00.105-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.ui                             : Name 'PK_PRODUCTOS' ignored for PRIMARY key.
-2026-06-17T22:48:00.110-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Table productos created
-2026-06-17T22:48:00.158-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.changelog                      : Foreign key constraint added to productos (categoria_id)
-2026-06-17T22:48:00.160-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-productos.yaml::2::cristopher ran successfully in 63ms
-2026-06-17T22:48:00.176-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2026-06-17T22:48:00.176-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.util                           : Run:                          2
-2026-06-17T22:48:00.178-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.util                           : Previously run:               0
-2026-06-17T22:48:00.178-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.util                           : Filtered out:                 0
-2026-06-17T22:48:00.178-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.util                           : -------------------------------
-2026-06-17T22:48:00.178-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.util                           : Total change sets:            2
-2026-06-17T22:48:00.180-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.util                           : Update summary generated
-2026-06-17T22:48:00.190-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.command                        : Update command completed successfully.
-2026-06-17T22:48:00.191-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 0
-2026-06-17T22:48:00.197-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
-2026-06-17T22:48:00.202-04:00  INFO 17332 --- [catalogo-service] [restartedMain] liquibase.command                        : Command execution complete
-2026-06-17T22:48:00.369-04:00  INFO 17332 --- [catalogo-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-17T22:48:00.484-04:00  INFO 17332 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-17T22:48:01.622-04:00  INFO 17332 --- [catalogo-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-17T22:48:01.755-04:00  WARN 17332 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-06-17T22:48:01.790-04:00  INFO 17332 --- [catalogo-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:mysql://localhost:3306/catalogo_db?createDatabaseIfNotExist=true]
-	Database driver: MySQL Connector/J
-	Database dialect: MySQLDialect
-	Database version: 5.5.5
-	Default catalog/schema: catalogo_db/undefined
-	Autocommit mode: undefined/unknown
-	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-17T22:48:03.767-04:00  INFO 17332 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-17T22:48:03.785-04:00  INFO 17332 --- [catalogo-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-17T22:48:03.940-04:00  INFO 17332 --- [catalogo-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-17T22:48:04.639-04:00  WARN 17332 --- [catalogo-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-17T22:48:05.661-04:00  INFO 17332 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9092 (http) with context path '/'
-2026-06-17T22:48:05.673-04:00  INFO 17332 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Started CatalogoServiceApplication in 13.667 seconds (process running for 14.487)
-2026-06-17T22:50:57.295-04:00  INFO 17332 --- [catalogo-service] [http-nio-9092-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-17T22:50:57.297-04:00  INFO 17332 --- [catalogo-service] [http-nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-17T22:50:57.303-04:00  INFO 17332 --- [catalogo-service] [http-nio-9092-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2026-06-17T22:50:57.359-04:00  INFO 17332 --- [catalogo-service] [http-nio-9092-exec-1] c.t.c.service.CategoriaService           : Listando categorias
-2026-06-17T22:51:05.448-04:00  INFO 17332 --- [catalogo-service] [http-nio-9092-exec-2] c.t.c.service.ProductoService            : Listando productos
+2026-06-18T16:40:01.788-04:00  INFO 20812 --- [catalogo-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-18T16:40:01.788-04:00  INFO 20812 --- [catalogo-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-18T16:40:01.901-04:00  WARN 20812 --- [catalogo-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-18T16:40:02.071-04:00  INFO 20812 --- [catalogo-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9092 (http) with context path '/'
+2026-06-18T16:40:02.086-04:00  INFO 20812 --- [catalogo-service] [restartedMain] c.t.c.CatalogoServiceApplication         : Started CatalogoServiceApplication in 1.413 seconds (process running for 230.843)
+2026-06-18T16:40:02.155-04:00  INFO 20812 --- [catalogo-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

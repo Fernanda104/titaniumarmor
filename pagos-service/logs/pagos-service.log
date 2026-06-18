@@ -1,55 +1,197 @@
-2026-06-17T22:11:35.750-04:00  INFO 18684 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : Starting PagosServiceApplication using Java 21.0.11 with PID 18684 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service)
-2026-06-17T22:11:35.773-04:00  INFO 18684 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-06-17T22:11:35.895-04:00  INFO 18684 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-06-17T22:11:35.897-04:00  INFO 18684 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-06-17T22:11:38.096-04:00  INFO 18684 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-17T22:11:38.693-04:00  INFO 18684 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 570 ms. Found 1 JPA repository interface.
-2026-06-17T22:11:40.297-04:00  INFO 18684 --- [pagos-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9095 (http)
-2026-06-17T22:11:40.348-04:00  INFO 18684 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-17T22:11:40.350-04:00  INFO 18684 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-17T22:11:40.529-04:00  INFO 18684 --- [pagos-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4628 ms
-2026-06-17T22:11:41.355-04:00  INFO 18684 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-17T22:11:42.168-04:00  INFO 18684 --- [pagos-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b59d25c
-2026-06-17T22:11:42.173-04:00  INFO 18684 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-17T22:11:45.934-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: pagos_db.databasechangelog
-2026-06-17T22:11:46.502-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.changelog                      : Reading from pagos_db.databasechangelog
-2026-06-17T22:11:46.619-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
-2026-06-17T22:11:46.705-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
-2026-06-17T22:11:47.045-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
-2026-06-17T22:11:47.053-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.command                        : Using deploymentId: 1748700967
-2026-06-17T22:11:47.081-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.changelog                      : Reading from pagos_db.databasechangelog
-2026-06-17T22:11:47.150-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/001-create-pagos.yaml::1::cristopher
-2026-06-17T22:11:47.224-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.ui                             : Name 'PK_PAGOS' ignored for PRIMARY key.
-2026-06-17T22:11:47.226-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.changelog                      : Table pagos created
-2026-06-17T22:11:47.232-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/001-create-pagos.yaml::1::cristopher ran successfully in 72ms
-2026-06-17T22:11:47.269-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/002-insert-data.yaml::2::cristopher
-2026-06-17T22:11:47.287-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:11:47.295-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:11:47.301-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:11:47.309-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:11:47.315-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:11:47.321-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:11:47.326-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:11:47.334-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:11:47.340-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:11:47.348-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:11:47.356-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/002-insert-data.yaml::2::cristopher ran successfully in 84ms
-2026-06-17T22:11:47.382-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2026-06-17T22:11:47.384-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.util                           : Run:                          2
-2026-06-17T22:11:47.384-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.util                           : Previously run:               0
-2026-06-17T22:11:47.386-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.util                           : Filtered out:                 0
-2026-06-17T22:11:47.387-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.util                           : -------------------------------
-2026-06-17T22:11:47.387-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.util                           : Total change sets:            2
-2026-06-17T22:11:47.391-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.util                           : Update summary generated
-2026-06-17T22:11:47.399-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.command                        : Update command completed successfully.
-2026-06-17T22:11:47.401-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 10
-2026-06-17T22:11:47.419-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
-2026-06-17T22:11:47.423-04:00  INFO 18684 --- [pagos-service] [restartedMain] liquibase.command                        : Command execution complete
-2026-06-17T22:11:47.740-04:00  INFO 18684 --- [pagos-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-17T22:11:48.008-04:00  INFO 18684 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-17T22:11:50.689-04:00  INFO 18684 --- [pagos-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-17T22:11:50.878-04:00  WARN 18684 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-06-17T22:11:50.923-04:00  INFO 18684 --- [pagos-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-06-18T16:22:10.472-04:00  INFO 1764 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : Starting PagosServiceApplication using Java 21.0.11 with PID 1764 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service)
+2026-06-18T16:22:10.529-04:00  INFO 1764 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-06-18T16:22:10.773-04:00  INFO 1764 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-18T16:22:10.780-04:00  INFO 1764 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-18T16:22:14.199-04:00  INFO 1764 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-18T16:22:15.079-04:00  INFO 1764 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 851 ms. Found 1 JPA repository interface.
+2026-06-18T16:22:18.350-04:00  INFO 1764 --- [pagos-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9095 (http)
+2026-06-18T16:22:18.407-04:00  INFO 1764 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-18T16:22:18.409-04:00  INFO 1764 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-18T16:22:18.739-04:00  INFO 1764 --- [pagos-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 7939 ms
+2026-06-18T16:22:19.325-04:00  INFO 1764 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-18T16:22:20.143-04:00  INFO 1764 --- [pagos-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c57e33a
+2026-06-18T16:22:20.162-04:00  INFO 1764 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-18T16:22:26.153-04:00  INFO 1764 --- [pagos-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: pagos_db.databasechangelog
+2026-06-18T16:26:29.252-04:00  INFO 18844 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : Starting PagosServiceApplication using Java 21.0.11 with PID 18844 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service)
+2026-06-18T16:26:29.258-04:00  INFO 18844 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-06-18T16:26:29.343-04:00  INFO 18844 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-18T16:26:29.346-04:00  INFO 18844 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-18T16:26:30.661-04:00  INFO 18844 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-18T16:26:30.936-04:00  INFO 18844 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 261 ms. Found 1 JPA repository interface.
+2026-06-18T16:26:32.088-04:00  INFO 18844 --- [pagos-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9095 (http)
+2026-06-18T16:26:32.121-04:00  INFO 18844 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-18T16:26:32.123-04:00  INFO 18844 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-18T16:26:32.244-04:00  INFO 18844 --- [pagos-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2895 ms
+2026-06-18T16:26:32.539-04:00  INFO 18844 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-18T16:26:32.827-04:00  INFO 18844 --- [pagos-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7045726d
+2026-06-18T16:26:32.827-04:00  INFO 18844 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-18T16:26:35.286-04:00  INFO 18844 --- [pagos-service] [restartedMain] liquibase.command                        : Logging exception.
+2026-06-18T16:26:35.287-04:00  INFO 18844 --- [pagos-service] [restartedMain] liquibase.ui                             : ERROR: Exception Details
+2026-06-18T16:26:35.287-04:00  INFO 18844 --- [pagos-service] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Class:  SQLSyntaxErrorException
+2026-06-18T16:26:35.290-04:00  INFO 18844 --- [pagos-service] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Reason:  Table 'pagos_db.databasechangelog' doesn't exist in engine
+2026-06-18T16:26:35.292-04:00  INFO 18844 --- [pagos-service] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Source:  MySQL 5.5.5-10.4.32-MariaDB
+2026-06-18T16:26:35.292-04:00  INFO 18844 --- [pagos-service] [restartedMain] liquibase.command                        : Command execution complete
+2026-06-18T16:26:35.299-04:00  WARN 18844 --- [pagos-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/liquibase/autoconfigure/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:db/changelog/db.changelog-master.yaml : liquibase.exception.DatabaseException: java.sql.SQLSyntaxErrorException: Table 'pagos_db.databasechangelog' doesn't exist in engine
+2026-06-18T16:26:35.303-04:00  INFO 18844 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-18T16:26:35.317-04:00  INFO 18844 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-18T16:26:35.322-04:00  INFO 18844 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-06-18T16:26:35.342-04:00  INFO 18844 --- [pagos-service] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-18T16:26:35.382-04:00 ERROR 18844 --- [pagos-service] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/liquibase/autoconfigure/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:db/changelog/db.changelog-master.yaml : liquibase.exception.DatabaseException: java.sql.SQLSyntaxErrorException: Table 'pagos_db.databasechangelog' doesn't exist in engine
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977) ~[spring-context-7.0.7.jar:7.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.7.jar:7.0.7]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.6.jar:4.0.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.6.jar:4.0.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.6.jar:4.0.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.6.jar:4.0.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.6.jar:4.0.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.6.jar:4.0.6]
+	at com.titaniumarmor.pagos_service.PagosServiceApplication.main(PagosServiceApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.6.jar:4.0.6]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/liquibase/autoconfigure/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:db/changelog/db.changelog-master.yaml : liquibase.exception.DatabaseException: java.sql.SQLSyntaxErrorException: Table 'pagos_db.databasechangelog' doesn't exist in engine
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:309) ~[spring-beans-7.0.7.jar:7.0.7]
+	... 13 common frames omitted
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:db/changelog/db.changelog-master.yaml : liquibase.exception.DatabaseException: java.sql.SQLSyntaxErrorException: Table 'pagos_db.databasechangelog' doesn't exist in engine
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:289) ~[liquibase-core-5.0.2.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864) ~[spring-beans-7.0.7.jar:7.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813) ~[spring-beans-7.0.7.jar:7.0.7]
+	... 20 common frames omitted
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing classpath:db/changelog/db.changelog-master.yaml : liquibase.exception.DatabaseException: java.sql.SQLSyntaxErrorException: Table 'pagos_db.databasechangelog' doesn't exist in engine
+	at liquibase.command.CommandScope.lambda$execute$5(CommandScope.java:325) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:250) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:226) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:257) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:216) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:241) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:250) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:240) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:219) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1366) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:205) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:188) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:327) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:279) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:241) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:250) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:240) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:219) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:272) ~[liquibase-core-5.0.2.jar:na]
+	... 22 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: Error parsing classpath:db/changelog/db.changelog-master.yaml : liquibase.exception.DatabaseException: java.sql.SQLSyntaxErrorException: Table 'pagos_db.databasechangelog' doesn't exist in engine
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:95) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.lambda$getDatabaseChangeLog$0(DatabaseChangelogCommandStep.java:143) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:241) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:250) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:240) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:219) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:307) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.Scope.child(Scope.java:311) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.getDatabaseChangeLog(DatabaseChangelogCommandStep.java:138) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:84) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.command.CommandScope.lambda$execute$5(CommandScope.java:269) ~[liquibase-core-5.0.2.jar:na]
+	... 40 common frames omitted
+Caused by: liquibase.exception.UnexpectedLiquibaseException: liquibase.exception.DatabaseException: java.sql.SQLSyntaxErrorException: Table 'pagos_db.databasechangelog' doesn't exist in engine
+	at liquibase.changelog.StandardChangeLogHistoryService.init(StandardChangeLogHistoryService.java:117) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:1181) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.handleInclude(DatabaseChangeLog.java:683) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.handleChildNodeHelper(DatabaseChangeLog.java:486) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:470) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:437) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:89) ~[liquibase-core-5.0.2.jar:na]
+	... 50 common frames omitted
+Caused by: liquibase.exception.DatabaseException: java.sql.SQLSyntaxErrorException: Table 'pagos_db.databasechangelog' doesn't exist in engine
+	at liquibase.snapshot.ResultSetCache.get(ResultSetCache.java:100) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.JdbcDatabaseSnapshot$CachingDatabaseMetaData.getColumns(JdbcDatabaseSnapshot.java:398) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.jvm.ColumnSnapshotGenerator.addTo(ColumnSnapshotGenerator.java:167) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.jvm.JdbcSnapshotGenerator.snapshot(JdbcSnapshotGenerator.java:76) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.SnapshotGeneratorChain.snapshot(SnapshotGeneratorChain.java:72) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.DatabaseSnapshot.include(DatabaseSnapshot.java:324) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.DatabaseSnapshot.init(DatabaseSnapshot.java:117) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.DatabaseSnapshot.<init>(DatabaseSnapshot.java:66) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.JdbcDatabaseSnapshot.<init>(JdbcDatabaseSnapshot.java:37) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.SnapshotGeneratorFactory.createSnapshot(SnapshotGeneratorFactory.java:343) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.SnapshotGeneratorFactory.createSnapshot(SnapshotGeneratorFactory.java:372) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.SnapshotGeneratorFactory.getDatabaseChangeLogTable(SnapshotGeneratorFactory.java:383) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.changelog.StandardChangeLogHistoryService.init(StandardChangeLogHistoryService.java:114) ~[liquibase-core-5.0.2.jar:na]
+	... 56 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Table 'pagos_db.databasechangelog' doesn't exist in engine
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.7.0.jar:9.7.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.7.0.jar:9.7.0]
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1318) ~[mysql-connector-j-9.7.0.jar:9.7.0]
+	at com.mysql.cj.jdbc.DatabaseMetaDataMysqlSchema.getColumns(DatabaseMetaDataMysqlSchema.java:1486) ~[mysql-connector-j-9.7.0.jar:9.7.0]
+	at com.zaxxer.hikari.pool.ProxyDatabaseMetaData.getColumns(ProxyDatabaseMetaData.java:129) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyDatabaseMetaData.getColumns(HikariProxyDatabaseMetaData.java) ~[HikariCP-7.0.2.jar:na]
+	at liquibase.snapshot.JdbcDatabaseSnapshot$CachingDatabaseMetaData$GetColumnResultSetCache.fastFetchQuery(JdbcDatabaseSnapshot.java:470) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.ResultSetCache$SingleResultSetExtractor.fastFetch(ResultSetCache.java:338) ~[liquibase-core-5.0.2.jar:na]
+	at liquibase.snapshot.ResultSetCache.get(ResultSetCache.java:71) ~[liquibase-core-5.0.2.jar:na]
+	... 68 common frames omitted
+
+2026-06-18T16:34:10.177-04:00  INFO 5260 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : Starting PagosServiceApplication using Java 21.0.11 with PID 5260 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service)
+2026-06-18T16:34:10.177-04:00  INFO 5260 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-06-18T16:34:10.240-04:00  INFO 5260 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-18T16:34:10.240-04:00  INFO 5260 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-18T16:34:11.547-04:00  INFO 5260 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-18T16:34:11.769-04:00  INFO 5260 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 201 ms. Found 1 JPA repository interface.
+2026-06-18T16:34:12.826-04:00  INFO 5260 --- [pagos-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9095 (http)
+2026-06-18T16:34:12.850-04:00  INFO 5260 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-18T16:34:12.850-04:00  INFO 5260 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-18T16:34:12.929-04:00  INFO 5260 --- [pagos-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2689 ms
+2026-06-18T16:34:13.226-04:00  INFO 5260 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-18T16:34:13.640-04:00  INFO 5260 --- [pagos-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f1c8315
+2026-06-18T16:34:13.644-04:00  INFO 5260 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-18T16:34:15.836-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: pagos_db.databasechangelog
+2026-06-18T16:34:16.160-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.changelog                      : Reading from pagos_db.databasechangelog
+2026-06-18T16:34:16.238-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
+2026-06-18T16:34:16.289-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
+2026-06-18T16:34:16.410-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2026-06-18T16:34:16.412-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.command                        : Using deploymentId: 1814853198
+2026-06-18T16:34:16.417-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.changelog                      : Reading from pagos_db.databasechangelog
+2026-06-18T16:34:16.458-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/001-create-pagos.yaml::1::cristopher
+2026-06-18T16:34:16.482-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.ui                             : Name 'PK_PAGOS' ignored for PRIMARY key.
+2026-06-18T16:34:16.487-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.changelog                      : Table pagos created
+2026-06-18T16:34:16.493-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/001-create-pagos.yaml::1::cristopher ran successfully in 29ms
+2026-06-18T16:34:16.516-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/002-insert-data.yaml::2::cristopher
+2026-06-18T16:34:16.526-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:34:16.530-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:34:16.535-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:34:16.541-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:34:16.546-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:34:16.551-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:34:16.556-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:34:16.559-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:34:16.564-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:34:16.569-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:34:16.572-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/002-insert-data.yaml::2::cristopher ran successfully in 54ms
+2026-06-18T16:34:16.591-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2026-06-18T16:34:16.594-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.util                           : Run:                          2
+2026-06-18T16:34:16.598-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.util                           : Previously run:               0
+2026-06-18T16:34:16.600-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.util                           : Filtered out:                 0
+2026-06-18T16:34:16.600-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.util                           : -------------------------------
+2026-06-18T16:34:16.600-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.util                           : Total change sets:            2
+2026-06-18T16:34:16.605-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.util                           : Update summary generated
+2026-06-18T16:34:16.615-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.command                        : Update command completed successfully.
+2026-06-18T16:34:16.615-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 10
+2026-06-18T16:34:16.623-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2026-06-18T16:34:16.625-04:00  INFO 5260 --- [pagos-service] [restartedMain] liquibase.command                        : Command execution complete
+2026-06-18T16:34:16.847-04:00  INFO 5260 --- [pagos-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-18T16:34:16.992-04:00  INFO 5260 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-18T16:34:18.258-04:00  INFO 5260 --- [pagos-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-18T16:34:18.434-04:00  WARN 5260 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-18T16:34:18.481-04:00  INFO 5260 --- [pagos-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/pagos_db?createDatabaseIfNotExist=true]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -61,64 +203,64 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-06-17T22:11:54.210-04:00  INFO 18684 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-17T22:11:54.243-04:00  INFO 18684 --- [pagos-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-17T22:11:54.466-04:00  INFO 18684 --- [pagos-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-17T22:11:56.522-04:00  WARN 18684 --- [pagos-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-17T22:11:58.428-04:00  INFO 18684 --- [pagos-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9095 (http) with context path '/'
-2026-06-17T22:11:58.476-04:00  INFO 18684 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : Started PagosServiceApplication in 23.999 seconds (process running for 25.89)
-2026-06-17T22:28:34.035-04:00  INFO 19440 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : Starting PagosServiceApplication using Java 21.0.11 with PID 19440 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service)
-2026-06-17T22:28:34.043-04:00  INFO 19440 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-06-17T22:28:34.149-04:00  INFO 19440 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-06-17T22:28:34.151-04:00  INFO 19440 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-06-17T22:28:36.522-04:00  INFO 19440 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-17T22:28:36.849-04:00  INFO 19440 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 292 ms. Found 1 JPA repository interface.
-2026-06-17T22:28:38.200-04:00  INFO 19440 --- [pagos-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9095 (http)
-2026-06-17T22:28:38.236-04:00  INFO 19440 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-17T22:28:38.241-04:00  INFO 19440 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-17T22:28:38.355-04:00  INFO 19440 --- [pagos-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4200 ms
-2026-06-17T22:28:38.663-04:00  INFO 19440 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-17T22:28:39.140-04:00  INFO 19440 --- [pagos-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c8fe3a9
-2026-06-17T22:28:39.146-04:00  INFO 19440 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-17T22:28:42.137-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: pagos_db.databasechangelog
-2026-06-17T22:28:42.501-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.changelog                      : Reading from pagos_db.databasechangelog
-2026-06-17T22:28:42.615-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
-2026-06-17T22:28:42.710-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
-2026-06-17T22:28:42.900-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
-2026-06-17T22:28:42.904-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.command                        : Using deploymentId: 1749718633
-2026-06-17T22:28:42.916-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.changelog                      : Reading from pagos_db.databasechangelog
-2026-06-17T22:28:42.977-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/001-create-pagos.yaml::1::cristopher
-2026-06-17T22:28:43.003-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.ui                             : Name 'PK_PAGOS' ignored for PRIMARY key.
-2026-06-17T22:28:43.003-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.changelog                      : Table pagos created
-2026-06-17T22:28:43.010-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/001-create-pagos.yaml::1::cristopher ran successfully in 26ms
-2026-06-17T22:28:43.042-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/002-insert-data.yaml::2::cristopher
-2026-06-17T22:28:43.062-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:28:43.066-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:28:43.070-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:28:43.076-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:28:43.081-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:28:43.084-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:28:43.090-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:28:43.096-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:28:43.100-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:28:43.106-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:28:43.109-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/002-insert-data.yaml::2::cristopher ran successfully in 61ms
-2026-06-17T22:28:43.129-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2026-06-17T22:28:43.129-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.util                           : Run:                          2
-2026-06-17T22:28:43.131-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.util                           : Previously run:               0
-2026-06-17T22:28:43.144-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.util                           : Filtered out:                 0
-2026-06-17T22:28:43.148-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.util                           : -------------------------------
-2026-06-17T22:28:43.148-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.util                           : Total change sets:            2
-2026-06-17T22:28:43.152-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.util                           : Update summary generated
-2026-06-17T22:28:43.160-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.command                        : Update command completed successfully.
-2026-06-17T22:28:43.162-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 10
-2026-06-17T22:28:43.171-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
-2026-06-17T22:28:43.173-04:00  INFO 19440 --- [pagos-service] [restartedMain] liquibase.command                        : Command execution complete
-2026-06-17T22:28:43.405-04:00  INFO 19440 --- [pagos-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-17T22:28:43.594-04:00  INFO 19440 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-17T22:28:44.891-04:00  INFO 19440 --- [pagos-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-17T22:28:45.032-04:00  WARN 19440 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-06-17T22:28:45.080-04:00  INFO 19440 --- [pagos-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-06-18T16:34:20.215-04:00  INFO 5260 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-18T16:34:20.230-04:00  INFO 5260 --- [pagos-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-18T16:34:20.401-04:00  INFO 5260 --- [pagos-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-18T16:34:21.421-04:00  WARN 5260 --- [pagos-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-18T16:34:22.289-04:00  INFO 5260 --- [pagos-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9095 (http) with context path '/'
+2026-06-18T16:34:22.303-04:00  INFO 5260 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : Started PagosServiceApplication in 12.709 seconds (process running for 13.678)
+2026-06-18T16:36:34.845-04:00  INFO 9156 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : Starting PagosServiceApplication using Java 21.0.11 with PID 9156 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service)
+2026-06-18T16:36:34.850-04:00  INFO 9156 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-06-18T16:36:34.946-04:00  INFO 9156 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-18T16:36:34.949-04:00  INFO 9156 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-18T16:36:37.470-04:00  INFO 9156 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-18T16:36:37.891-04:00  INFO 9156 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 404 ms. Found 1 JPA repository interface.
+2026-06-18T16:36:39.344-04:00  INFO 9156 --- [pagos-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9095 (http)
+2026-06-18T16:36:39.382-04:00  INFO 9156 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-18T16:36:39.386-04:00  INFO 9156 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-18T16:36:39.522-04:00  INFO 9156 --- [pagos-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4571 ms
+2026-06-18T16:36:39.803-04:00  INFO 9156 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-18T16:36:40.273-04:00  INFO 9156 --- [pagos-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55ae8bb2
+2026-06-18T16:36:40.277-04:00  INFO 9156 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-18T16:36:43.192-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: pagos_db.databasechangelog
+2026-06-18T16:36:43.516-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.changelog                      : Reading from pagos_db.databasechangelog
+2026-06-18T16:36:43.623-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
+2026-06-18T16:36:43.693-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
+2026-06-18T16:36:43.833-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2026-06-18T16:36:43.837-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.command                        : Using deploymentId: 1814999779
+2026-06-18T16:36:43.845-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.changelog                      : Reading from pagos_db.databasechangelog
+2026-06-18T16:36:43.925-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/001-create-pagos.yaml::1::cristopher
+2026-06-18T16:36:43.958-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.ui                             : Name 'PK_PAGOS' ignored for PRIMARY key.
+2026-06-18T16:36:43.960-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.changelog                      : Table pagos created
+2026-06-18T16:36:43.968-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/001-create-pagos.yaml::1::cristopher ran successfully in 34ms
+2026-06-18T16:36:44.023-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/002-insert-data.yaml::2::cristopher
+2026-06-18T16:36:44.061-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:36:44.081-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:36:44.089-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:36:44.097-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:36:44.101-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:36:44.108-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:36:44.113-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:36:44.117-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:36:44.125-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:36:44.129-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
+2026-06-18T16:36:44.132-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/002-insert-data.yaml::2::cristopher ran successfully in 99ms
+2026-06-18T16:36:44.156-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2026-06-18T16:36:44.158-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.util                           : Run:                          2
+2026-06-18T16:36:44.160-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.util                           : Previously run:               0
+2026-06-18T16:36:44.160-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.util                           : Filtered out:                 0
+2026-06-18T16:36:44.162-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.util                           : -------------------------------
+2026-06-18T16:36:44.164-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.util                           : Total change sets:            2
+2026-06-18T16:36:44.166-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.util                           : Update summary generated
+2026-06-18T16:36:44.178-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.command                        : Update command completed successfully.
+2026-06-18T16:36:44.193-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 10
+2026-06-18T16:36:44.217-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2026-06-18T16:36:44.225-04:00  INFO 9156 --- [pagos-service] [restartedMain] liquibase.command                        : Command execution complete
+2026-06-18T16:36:44.463-04:00  INFO 9156 --- [pagos-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-18T16:36:44.612-04:00  INFO 9156 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-18T16:36:45.928-04:00  INFO 9156 --- [pagos-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-18T16:36:46.117-04:00  WARN 9156 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-18T16:36:46.169-04:00  INFO 9156 --- [pagos-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/pagos_db?createDatabaseIfNotExist=true]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -130,220 +272,9 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-06-17T22:28:47.463-04:00  INFO 19440 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-17T22:28:47.487-04:00  INFO 19440 --- [pagos-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-17T22:28:47.718-04:00  INFO 19440 --- [pagos-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-17T22:28:49.376-04:00  WARN 19440 --- [pagos-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-17T22:28:50.859-04:00  INFO 19440 --- [pagos-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9095 (http) with context path '/'
-2026-06-17T22:28:50.877-04:00  INFO 19440 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : Started PagosServiceApplication in 17.779 seconds (process running for 18.94)
-2026-06-17T22:37:41.977-04:00  INFO 9348 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : Starting PagosServiceApplication using Java 21.0.11 with PID 9348 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service)
-2026-06-17T22:37:41.990-04:00  INFO 9348 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-06-17T22:37:42.102-04:00  INFO 9348 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-06-17T22:37:42.102-04:00  INFO 9348 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-06-17T22:37:44.863-04:00  INFO 9348 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-17T22:37:45.282-04:00  INFO 9348 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 394 ms. Found 1 JPA repository interface.
-2026-06-17T22:37:46.969-04:00  INFO 9348 --- [pagos-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9095 (http)
-2026-06-17T22:37:47.034-04:00  INFO 9348 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-17T22:37:47.039-04:00  INFO 9348 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-17T22:37:47.187-04:00  INFO 9348 --- [pagos-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 5078 ms
-2026-06-17T22:37:47.652-04:00  INFO 9348 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-17T22:37:48.206-04:00  INFO 9348 --- [pagos-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46ca6ba3
-2026-06-17T22:37:48.210-04:00  INFO 9348 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-17T22:37:51.574-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: pagos_db.databasechangelog
-2026-06-17T22:37:51.975-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.changelog                      : Reading from pagos_db.databasechangelog
-2026-06-17T22:37:52.052-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
-2026-06-17T22:37:52.115-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
-2026-06-17T22:37:52.247-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
-2026-06-17T22:37:52.247-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.command                        : Using deploymentId: 1750267618
-2026-06-17T22:37:52.255-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.changelog                      : Reading from pagos_db.databasechangelog
-2026-06-17T22:37:52.315-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/001-create-pagos.yaml::1::cristopher
-2026-06-17T22:37:52.354-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.ui                             : Name 'PK_PAGOS' ignored for PRIMARY key.
-2026-06-17T22:37:52.356-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.changelog                      : Table pagos created
-2026-06-17T22:37:52.378-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/001-create-pagos.yaml::1::cristopher ran successfully in 58ms
-2026-06-17T22:37:52.418-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/002-insert-data.yaml::2::cristopher
-2026-06-17T22:37:52.436-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:37:52.440-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:37:52.449-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:37:52.455-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:37:52.465-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:37:52.472-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:37:52.482-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:37:52.486-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:37:52.499-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:37:52.505-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:37:52.517-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/002-insert-data.yaml::2::cristopher ran successfully in 97ms
-2026-06-17T22:37:52.541-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2026-06-17T22:37:52.544-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.util                           : Run:                          2
-2026-06-17T22:37:52.546-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.util                           : Previously run:               0
-2026-06-17T22:37:52.549-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.util                           : Filtered out:                 0
-2026-06-17T22:37:52.550-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.util                           : -------------------------------
-2026-06-17T22:37:52.552-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.util                           : Total change sets:            2
-2026-06-17T22:37:52.554-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.util                           : Update summary generated
-2026-06-17T22:37:52.564-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.command                        : Update command completed successfully.
-2026-06-17T22:37:52.568-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 10
-2026-06-17T22:37:52.579-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
-2026-06-17T22:37:52.581-04:00  INFO 9348 --- [pagos-service] [restartedMain] liquibase.command                        : Command execution complete
-2026-06-17T22:37:52.836-04:00  INFO 9348 --- [pagos-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-17T22:37:53.044-04:00  INFO 9348 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-17T22:37:55.219-04:00  INFO 9348 --- [pagos-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-17T22:37:55.546-04:00  WARN 9348 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-06-17T22:37:55.608-04:00  INFO 9348 --- [pagos-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:mysql://localhost:3306/pagos_db?createDatabaseIfNotExist=true]
-	Database driver: MySQL Connector/J
-	Database dialect: MySQLDialect
-	Database version: 5.5.5
-	Default catalog/schema: pagos_db/undefined
-	Autocommit mode: undefined/unknown
-	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-17T22:37:58.538-04:00  INFO 9348 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-17T22:37:58.564-04:00  INFO 9348 --- [pagos-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-17T22:37:58.805-04:00  INFO 9348 --- [pagos-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-17T22:38:00.395-04:00  WARN 9348 --- [pagos-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-17T22:38:01.776-04:00  INFO 9348 --- [pagos-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9095 (http) with context path '/'
-2026-06-17T22:38:01.821-04:00  INFO 9348 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : Started PagosServiceApplication in 21.148 seconds (process running for 22.248)
-2026-06-17T22:44:48.547-04:00  INFO 16444 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : Starting PagosServiceApplication using Java 21.0.11 with PID 16444 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service)
-2026-06-17T22:44:48.554-04:00  INFO 16444 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-06-17T22:44:48.661-04:00  INFO 16444 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-06-17T22:44:48.661-04:00  INFO 16444 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-06-17T22:44:50.952-04:00  INFO 16444 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-17T22:44:51.286-04:00  INFO 16444 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 312 ms. Found 1 JPA repository interface.
-2026-06-17T22:44:52.811-04:00  INFO 16444 --- [pagos-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9095 (http)
-2026-06-17T22:44:52.848-04:00  INFO 16444 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-17T22:44:52.852-04:00  INFO 16444 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-17T22:44:52.959-04:00  INFO 16444 --- [pagos-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4296 ms
-2026-06-17T22:44:53.243-04:00  INFO 16444 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-17T22:44:53.672-04:00  INFO 16444 --- [pagos-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f1c8315
-2026-06-17T22:44:53.677-04:00  INFO 16444 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-17T22:44:56.623-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: pagos_db.databasechangelog
-2026-06-17T22:44:56.944-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.changelog                      : Reading from pagos_db.databasechangelog
-2026-06-17T22:44:57.021-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
-2026-06-17T22:44:57.142-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
-2026-06-17T22:44:57.392-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
-2026-06-17T22:44:57.394-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.command                        : Using deploymentId: 1750693216
-2026-06-17T22:44:57.401-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.changelog                      : Reading from pagos_db.databasechangelog
-2026-06-17T22:44:57.473-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/001-create-pagos.yaml::1::cristopher
-2026-06-17T22:44:57.501-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.ui                             : Name 'PK_PAGOS' ignored for PRIMARY key.
-2026-06-17T22:44:57.503-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.changelog                      : Table pagos created
-2026-06-17T22:44:57.512-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/001-create-pagos.yaml::1::cristopher ran successfully in 32ms
-2026-06-17T22:44:57.549-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/002-insert-data.yaml::2::cristopher
-2026-06-17T22:44:57.565-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:44:57.569-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:44:57.575-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:44:57.581-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:44:57.585-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:44:57.593-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:44:57.595-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:44:57.595-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:44:57.606-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:44:57.613-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:44:57.617-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/002-insert-data.yaml::2::cristopher ran successfully in 62ms
-2026-06-17T22:44:57.634-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2026-06-17T22:44:57.637-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.util                           : Run:                          2
-2026-06-17T22:44:57.637-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.util                           : Previously run:               0
-2026-06-17T22:44:57.638-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.util                           : Filtered out:                 0
-2026-06-17T22:44:57.642-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.util                           : -------------------------------
-2026-06-17T22:44:57.644-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.util                           : Total change sets:            2
-2026-06-17T22:44:57.645-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.util                           : Update summary generated
-2026-06-17T22:44:57.653-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.command                        : Update command completed successfully.
-2026-06-17T22:44:57.654-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 10
-2026-06-17T22:44:57.665-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
-2026-06-17T22:44:57.667-04:00  INFO 16444 --- [pagos-service] [restartedMain] liquibase.command                        : Command execution complete
-2026-06-17T22:44:57.851-04:00  INFO 16444 --- [pagos-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-17T22:44:57.983-04:00  INFO 16444 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-17T22:44:59.533-04:00  INFO 16444 --- [pagos-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-17T22:44:59.726-04:00  WARN 16444 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-06-17T22:44:59.767-04:00  INFO 16444 --- [pagos-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:mysql://localhost:3306/pagos_db?createDatabaseIfNotExist=true]
-	Database driver: MySQL Connector/J
-	Database dialect: MySQLDialect
-	Database version: 5.5.5
-	Default catalog/schema: pagos_db/undefined
-	Autocommit mode: undefined/unknown
-	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-17T22:45:01.909-04:00  INFO 16444 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-17T22:45:01.934-04:00  INFO 16444 --- [pagos-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-17T22:45:02.226-04:00  INFO 16444 --- [pagos-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-17T22:45:03.852-04:00  WARN 16444 --- [pagos-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-17T22:45:05.010-04:00  INFO 16444 --- [pagos-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9095 (http) with context path '/'
-2026-06-17T22:45:05.022-04:00  INFO 16444 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : Started PagosServiceApplication in 17.413 seconds (process running for 18.632)
-2026-06-17T22:48:14.038-04:00  INFO 15016 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : Starting PagosServiceApplication using Java 21.0.11 with PID 15016 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\pagos-service)
-2026-06-17T22:48:14.043-04:00  INFO 15016 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-06-17T22:48:14.141-04:00  INFO 15016 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-06-17T22:48:14.141-04:00  INFO 15016 --- [pagos-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-06-17T22:48:16.286-04:00  INFO 15016 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-17T22:48:16.691-04:00  INFO 15016 --- [pagos-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 383 ms. Found 1 JPA repository interface.
-2026-06-17T22:48:18.487-04:00  INFO 15016 --- [pagos-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9095 (http)
-2026-06-17T22:48:18.530-04:00  INFO 15016 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-17T22:48:18.536-04:00  INFO 15016 --- [pagos-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-17T22:48:18.651-04:00  INFO 15016 --- [pagos-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4507 ms
-2026-06-17T22:48:19.000-04:00  INFO 15016 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-17T22:48:19.449-04:00  INFO 15016 --- [pagos-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f1c8315
-2026-06-17T22:48:19.453-04:00  INFO 15016 --- [pagos-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-17T22:48:22.176-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: pagos_db.databasechangelog
-2026-06-17T22:48:22.547-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.changelog                      : Reading from pagos_db.databasechangelog
-2026-06-17T22:48:22.638-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
-2026-06-17T22:48:22.722-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
-2026-06-17T22:48:22.932-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
-2026-06-17T22:48:22.936-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.command                        : Using deploymentId: 1750898951
-2026-06-17T22:48:22.943-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.changelog                      : Reading from pagos_db.databasechangelog
-2026-06-17T22:48:23.024-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/001-create-pagos.yaml::1::cristopher
-2026-06-17T22:48:23.051-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.ui                             : Name 'PK_PAGOS' ignored for PRIMARY key.
-2026-06-17T22:48:23.055-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.changelog                      : Table pagos created
-2026-06-17T22:48:23.062-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/001-create-pagos.yaml::1::cristopher ran successfully in 28ms
-2026-06-17T22:48:23.085-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/002-insert-data.yaml::2::cristopher
-2026-06-17T22:48:23.094-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:48:23.102-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:48:23.108-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:48:23.114-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:48:23.119-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:48:23.129-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:48:23.134-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:48:23.147-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:48:23.153-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:48:23.161-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.changelog                      : New row inserted into pagos
-2026-06-17T22:48:23.163-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/002-insert-data.yaml::2::cristopher ran successfully in 76ms
-2026-06-17T22:48:23.181-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2026-06-17T22:48:23.185-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.util                           : Run:                          2
-2026-06-17T22:48:23.187-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.util                           : Previously run:               0
-2026-06-17T22:48:23.189-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.util                           : Filtered out:                 0
-2026-06-17T22:48:23.189-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.util                           : -------------------------------
-2026-06-17T22:48:23.191-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.util                           : Total change sets:            2
-2026-06-17T22:48:23.193-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.util                           : Update summary generated
-2026-06-17T22:48:23.200-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.command                        : Update command completed successfully.
-2026-06-17T22:48:23.202-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 10
-2026-06-17T22:48:23.208-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
-2026-06-17T22:48:23.208-04:00  INFO 15016 --- [pagos-service] [restartedMain] liquibase.command                        : Command execution complete
-2026-06-17T22:48:23.399-04:00  INFO 15016 --- [pagos-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-17T22:48:23.526-04:00  INFO 15016 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-17T22:48:24.876-04:00  INFO 15016 --- [pagos-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-17T22:48:25.021-04:00  WARN 15016 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-06-17T22:48:25.070-04:00  INFO 15016 --- [pagos-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:mysql://localhost:3306/pagos_db?createDatabaseIfNotExist=true]
-	Database driver: MySQL Connector/J
-	Database dialect: MySQLDialect
-	Database version: 5.5.5
-	Default catalog/schema: pagos_db/undefined
-	Autocommit mode: undefined/unknown
-	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-17T22:48:26.976-04:00  INFO 15016 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-17T22:48:26.996-04:00  INFO 15016 --- [pagos-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-17T22:48:27.203-04:00  INFO 15016 --- [pagos-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-17T22:48:28.794-04:00  WARN 15016 --- [pagos-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-17T22:48:30.064-04:00  INFO 15016 --- [pagos-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9095 (http) with context path '/'
-2026-06-17T22:48:30.084-04:00  INFO 15016 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : Started PagosServiceApplication in 16.888 seconds (process running for 17.977)
-2026-06-17T22:51:33.062-04:00  INFO 15016 --- [pagos-service] [http-nio-9095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-17T22:51:33.064-04:00  INFO 15016 --- [pagos-service] [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-17T22:51:33.079-04:00  INFO 15016 --- [pagos-service] [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
-2026-06-17T22:51:33.134-04:00  INFO 15016 --- [pagos-service] [http-nio-9095-exec-1] c.t.pagos_service.service.PagoService    : Listando pagos
+2026-06-18T16:36:48.527-04:00  INFO 9156 --- [pagos-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-18T16:36:48.574-04:00  INFO 9156 --- [pagos-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-18T16:36:48.861-04:00  INFO 9156 --- [pagos-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-18T16:36:50.769-04:00  WARN 9156 --- [pagos-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-18T16:36:51.914-04:00  INFO 9156 --- [pagos-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9095 (http) with context path '/'
+2026-06-18T16:36:51.930-04:00  INFO 9156 --- [pagos-service] [restartedMain] c.t.p.PagosServiceApplication            : Started PagosServiceApplication in 17.989 seconds (process running for 18.91)
