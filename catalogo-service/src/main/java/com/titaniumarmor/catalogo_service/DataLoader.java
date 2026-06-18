@@ -18,42 +18,68 @@ import net.datafaker.Faker;
 
 @Profile("dev")
 @Component
-public class DataLoader implements CommandLineRunner{
+public class DataLoader implements CommandLineRunner {
+
     @Autowired
     private CategoriaRepository categoriaRepository;
-    
+
     @Autowired
     private ProductoRepository productoRepository;
 
-   @Override
+    @Override
     public void run(String... args) throws Exception {
+
         Faker faker = new Faker();
         Random random = new Random();
 
-        //Creamos categorias manualmente, ya que datafaker no tiene categorias que nos sirvan
+
         String[] nombresCategorias = {
-            "Gimnasio y Musculación", "Montañismo y Outdoor", 
-            "Básquetbol", "Proteínas y Suplementos"
+                "Ropa Deportiva",
+                "Calzado Deportivo",
+                "Suplementos",
+                "Accesorios de Entrenamiento"
         };
-        List<Categoria> categoriasGeneradas = new ArrayList<>(); //se crea lista para guardar las categorias y poder utilizarlas luego
-            // Generar categorias
-        for (int i = 0; i < nombresCategorias.length; i++) {
-            Categoria cat = new Categoria(); 
-            cat.setNombre(nombresCategorias[i]);
-            categoriasGeneradas.add(cat);
-            categoriaRepository.save(cat);
+
+        List<Categoria> categorias = new ArrayList<>();
+
+        for (String nombreCategoria : nombresCategorias) {
+
+            Categoria categoria = new Categoria();
+            categoria.setNombre(nombreCategoria);
+
+            categorias.add(
+                    categoriaRepository.save(categoria)
+            );
         }
 
-                // Generar productos random, con nombres y todo random ya que no hay datos exactos para nuestro proyecto
-        for (int i = 0; i < 4; i++) {
+        String[][] productos = {
+                {"Polera Dry Fit Hombre", "Ropa Deportiva", "Nike"},
+                {"Short Deportivo Mujer", "Ropa Deportiva", "Adidas"},
+                {"Zapatillas Running Pro", "Calzado Deportivo", "Asics"},
+                {"Zapatillas Training Flex", "Calzado Deportivo", "Reebok"},
+                {"Proteína Whey Chocolate", "Suplementos", "Optimum Nutrition"},
+                {"Creatina Monohidratada", "Suplementos", "Universal Nutrition"},
+                {"Guantes de Gimnasio", "Accesorios de Entrenamiento", "Everlast"},
+                {"Botella Shaker 700ml", "Accesorios de Entrenamiento", "Titanium Armor"}
+        };
+
+        for (String[] datosProducto : productos) {
+
             Producto producto = new Producto();
-            producto.setNombre(faker.commerce().productName());  
-            producto.setDescripcion((faker.lorem().sentence(6)));  //usamos lorem ipsum para agregar la "descripcion"
-            producto.setPrecio(faker.number().randomDouble(0, 5000, 200000)); //se agrega un valor double entre 500 y 200000, con decimal 0
-            producto.setMarca(faker.commerce().brand()); //agrega marcas random
-            producto.setCategoria(categoriasGeneradas.get(i)); //agrega el nombre de la categoriade acuerdo al numero en la lista creada arriba
+
+            producto.setNombre(datosProducto[0]);
+            producto.setDescripcion(faker.lorem().sentence(8));
+            producto.setPrecio((double) random.nextInt(10000, 90000));
+            producto.setMarca(datosProducto[2]);
+
+            Categoria categoria = categorias.stream()
+                    .filter(c -> c.getNombre().equals(datosProducto[1]))
+                    .findFirst()
+                    .orElse(categorias.get(0));
+
+            producto.setCategoria(categoria);
+
             productoRepository.save(producto);
         }
-
     }
 }

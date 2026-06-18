@@ -1,30 +1,47 @@
-2026-05-26T16:04:40.195-04:00  INFO 24960 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : Starting VentasServiceApplication using Java 24.0.2 with PID 24960 (C:\Users\av-alumno\Downloads\titaniumarmor\ventas-service\target\classes started by AV-Alumno in C:\Users\av-alumno\Downloads\titaniumarmor\ventas-service)
-2026-05-26T16:04:40.196-04:00  INFO 24960 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : No active profile set, falling back to 1 default profile: "default"
-2026-05-26T16:04:40.309-04:00  INFO 24960 --- [ventas-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-26T16:04:40.320-04:00  INFO 24960 --- [ventas-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
-2026-05-26T16:04:40.388-04:00  INFO 24960 --- [ventas-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8084 (http)
-2026-05-26T16:04:40.390-04:00  INFO 24960 --- [ventas-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-05-26T16:04:40.391-04:00  INFO 24960 --- [ventas-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-05-26T16:04:40.411-04:00  INFO 24960 --- [ventas-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 213 ms
-2026-05-26T16:04:40.429-04:00  INFO 24960 --- [ventas-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2026-05-26T16:04:40.433-04:00  INFO 24960 --- [ventas-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@177ba3d6
-2026-05-26T16:04:40.434-04:00  INFO 24960 --- [ventas-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2026-05-26T16:04:40.589-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.changelog                      : Reading from ventas_db.databasechangelog
-2026-05-26T16:04:40.614-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
-2026-05-26T16:04:40.615-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.changelog                      : Reading from ventas_db.databasechangelog
-2026-05-26T16:04:40.617-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
-2026-05-26T16:04:40.618-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.util                           : Run:                          0
-2026-05-26T16:04:40.618-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.util                           : Previously run:               2
-2026-05-26T16:04:40.618-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.util                           : Filtered out:                 0
-2026-05-26T16:04:40.618-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.util                           : -------------------------------
-2026-05-26T16:04:40.618-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.util                           : Total change sets:            2
-2026-05-26T16:04:40.619-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.util                           : Update summary generated
-2026-05-26T16:04:40.619-04:00  INFO 24960 --- [ventas-service] [restartedMain] liquibase.command                        : Command execution complete
-2026-05-26T16:04:40.628-04:00  INFO 24960 --- [ventas-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-05-26T16:04:40.644-04:00  INFO 24960 --- [ventas-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-26T16:04:40.646-04:00  WARN 24960 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
-2026-05-26T16:04:40.647-04:00  INFO 24960 --- [ventas-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:mysql://localhost:3306/ventas_db]
+2026-06-17T22:11:30.132-04:00  INFO 18756 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : Starting VentasServiceApplication using Java 21.0.11 with PID 18756 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\ventas-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\ventas-service)
+2026-06-17T22:11:30.154-04:00  INFO 18756 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : The following 1 profile is active: "dev"
+2026-06-17T22:11:30.314-04:00  INFO 18756 --- [ventas-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-17T22:11:30.317-04:00  INFO 18756 --- [ventas-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-17T22:11:32.743-04:00  INFO 18756 --- [ventas-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-17T22:11:33.266-04:00  INFO 18756 --- [ventas-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 498 ms. Found 2 JPA repository interfaces.
+2026-06-17T22:11:34.983-04:00  INFO 18756 --- [ventas-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9094 (http)
+2026-06-17T22:11:35.033-04:00  INFO 18756 --- [ventas-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-17T22:11:35.035-04:00  INFO 18756 --- [ventas-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-17T22:11:35.201-04:00  INFO 18756 --- [ventas-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4881 ms
+2026-06-17T22:11:35.669-04:00  INFO 18756 --- [ventas-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-17T22:11:36.368-04:00  INFO 18756 --- [ventas-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b61e1ba
+2026-06-17T22:11:36.393-04:00  INFO 18756 --- [ventas-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-17T22:11:40.479-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: ventas_db.databasechangelog
+2026-06-17T22:11:40.977-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.changelog                      : Reading from ventas_db.databasechangelog
+2026-06-17T22:11:41.031-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
+2026-06-17T22:11:41.140-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
+2026-06-17T22:11:41.338-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2026-06-17T22:11:41.345-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.command                        : Using deploymentId: 1748695620
+2026-06-17T22:11:41.361-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.changelog                      : Reading from ventas_db.databasechangelog
+2026-06-17T22:11:41.410-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/001-create-ventas.yaml::1::cristopher
+2026-06-17T22:11:41.438-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.ui                             : Name 'PK_VENTAS' ignored for PRIMARY key.
+2026-06-17T22:11:41.439-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.changelog                      : Table ventas created
+2026-06-17T22:11:41.475-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.ui                             : Name 'PK_DETALLE_VENTAS' ignored for PRIMARY key.
+2026-06-17T22:11:41.477-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.changelog                      : Table detalle_ventas created
+2026-06-17T22:11:41.594-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.changelog                      : Foreign key constraint added to detalle_ventas (venta_id)
+2026-06-17T22:11:41.598-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/001-create-ventas.yaml::1::cristopher ran successfully in 181ms
+2026-06-17T22:11:41.634-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2026-06-17T22:11:41.636-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.util                           : Run:                          1
+2026-06-17T22:11:41.640-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.util                           : Previously run:               0
+2026-06-17T22:11:41.640-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.util                           : Filtered out:                 0
+2026-06-17T22:11:41.642-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.util                           : -------------------------------
+2026-06-17T22:11:41.642-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.util                           : Total change sets:            1
+2026-06-17T22:11:41.644-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.util                           : Update summary generated
+2026-06-17T22:11:41.656-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.command                        : Update command completed successfully.
+2026-06-17T22:11:41.662-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 0
+2026-06-17T22:11:41.680-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2026-06-17T22:11:41.682-04:00  INFO 18756 --- [ventas-service] [restartedMain] liquibase.command                        : Command execution complete
+2026-06-17T22:11:42.044-04:00  INFO 18756 --- [ventas-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-17T22:11:42.286-04:00  INFO 18756 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-17T22:11:44.581-04:00  INFO 18756 --- [ventas-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-17T22:11:44.944-04:00  WARN 18756 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-17T22:11:45.006-04:00  INFO 18756 --- [ventas-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/ventas_db?createDatabaseIfNotExist=true]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
 	Database version: 5.5.5
@@ -35,26 +52,253 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-05-26T16:04:40.681-04:00  INFO 24960 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-26T16:04:40.682-04:00  INFO 24960 --- [ventas-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-26T16:04:40.747-04:00  WARN 24960 --- [ventas-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-05-26T16:04:40.800-04:00  INFO 24960 --- [ventas-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8084 (http) with context path '/'
-2026-05-26T16:04:40.801-04:00  INFO 24960 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : Started VentasServiceApplication in 0.651 seconds (process running for 262.654)
-2026-05-26T16:04:40.803-04:00  INFO 24960 --- [ventas-service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2026-05-26T16:08:07.403-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-26T16:08:07.403-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-05-26T16:08:07.404-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2026-05-26T16:08:07.430-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-1] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
-2026-05-26T16:09:15.166-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-5] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
-2026-05-26T16:09:27.481-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-7] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
-2026-05-26T16:09:31.972-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-8] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
-2026-05-26T16:10:02.902-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-6] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
-2026-05-26T16:10:55.906-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-9] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
-2026-05-26T16:12:38.424-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-1] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
-2026-05-26T16:12:45.147-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-4] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
-2026-05-26T16:13:28.272-04:00  INFO 24960 --- [ventas-service] [http-nio-8084-exec-3] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas
-2026-05-26T16:43:53.972-04:00  INFO 24960 --- [ventas-service] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-05-26T16:43:53.979-04:00  INFO 24960 --- [ventas-service] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-05-26T16:43:53.982-04:00  INFO 24960 --- [ventas-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-26T16:43:53.984-04:00  INFO 24960 --- [ventas-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2026-05-26T16:43:53.986-04:00  INFO 24960 --- [ventas-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-06-17T22:11:48.723-04:00  INFO 18756 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-17T22:11:48.779-04:00  INFO 18756 --- [ventas-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T22:11:49.289-04:00  INFO 18756 --- [ventas-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-17T22:11:51.507-04:00  WARN 18756 --- [ventas-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-17T22:11:53.031-04:00  INFO 18756 --- [ventas-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9094 (http) with context path '/'
+2026-06-17T22:11:53.090-04:00  INFO 18756 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : Started VentasServiceApplication in 24.485 seconds (process running for 26.682)
+2026-06-17T22:28:26.898-04:00  INFO 6916 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : Starting VentasServiceApplication using Java 21.0.11 with PID 6916 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\ventas-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\ventas-service)
+2026-06-17T22:28:26.903-04:00  INFO 6916 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : The following 1 profile is active: "dev"
+2026-06-17T22:28:26.993-04:00  INFO 6916 --- [ventas-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-17T22:28:26.993-04:00  INFO 6916 --- [ventas-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-17T22:28:28.928-04:00  INFO 6916 --- [ventas-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-17T22:28:29.330-04:00  INFO 6916 --- [ventas-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 380 ms. Found 2 JPA repository interfaces.
+2026-06-17T22:28:30.599-04:00  INFO 6916 --- [ventas-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9094 (http)
+2026-06-17T22:28:30.708-04:00  INFO 6916 --- [ventas-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-17T22:28:30.720-04:00  INFO 6916 --- [ventas-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-17T22:28:30.928-04:00  INFO 6916 --- [ventas-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3933 ms
+2026-06-17T22:28:31.464-04:00  INFO 6916 --- [ventas-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-17T22:28:31.960-04:00  INFO 6916 --- [ventas-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77ed5bd7
+2026-06-17T22:28:31.967-04:00  INFO 6916 --- [ventas-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-17T22:28:34.540-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: ventas_db.databasechangelog
+2026-06-17T22:28:35.004-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.changelog                      : Reading from ventas_db.databasechangelog
+2026-06-17T22:28:35.032-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
+2026-06-17T22:28:35.090-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
+2026-06-17T22:28:35.263-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2026-06-17T22:28:35.265-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.command                        : Using deploymentId: 1749711424
+2026-06-17T22:28:35.271-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.changelog                      : Reading from ventas_db.databasechangelog
+2026-06-17T22:28:35.321-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/001-create-ventas.yaml::1::cristopher
+2026-06-17T22:28:35.354-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.ui                             : Name 'PK_VENTAS' ignored for PRIMARY key.
+2026-06-17T22:28:35.361-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.changelog                      : Table ventas created
+2026-06-17T22:28:35.383-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.ui                             : Name 'PK_DETALLE_VENTAS' ignored for PRIMARY key.
+2026-06-17T22:28:35.385-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.changelog                      : Table detalle_ventas created
+2026-06-17T22:28:35.450-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.changelog                      : Foreign key constraint added to detalle_ventas (venta_id)
+2026-06-17T22:28:35.457-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/001-create-ventas.yaml::1::cristopher ran successfully in 126ms
+2026-06-17T22:28:35.480-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2026-06-17T22:28:35.480-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.util                           : Run:                          1
+2026-06-17T22:28:35.481-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.util                           : Previously run:               0
+2026-06-17T22:28:35.482-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.util                           : Filtered out:                 0
+2026-06-17T22:28:35.482-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.util                           : -------------------------------
+2026-06-17T22:28:35.483-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.util                           : Total change sets:            1
+2026-06-17T22:28:35.485-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.util                           : Update summary generated
+2026-06-17T22:28:35.492-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.command                        : Update command completed successfully.
+2026-06-17T22:28:35.494-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 0
+2026-06-17T22:28:35.500-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2026-06-17T22:28:35.502-04:00  INFO 6916 --- [ventas-service] [restartedMain] liquibase.command                        : Command execution complete
+2026-06-17T22:28:35.733-04:00  INFO 6916 --- [ventas-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-17T22:28:35.983-04:00  INFO 6916 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-17T22:28:37.394-04:00  INFO 6916 --- [ventas-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-17T22:28:37.559-04:00  WARN 6916 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-17T22:28:37.603-04:00  INFO 6916 --- [ventas-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/ventas_db?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: ventas_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-17T22:28:39.759-04:00  INFO 6916 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-17T22:28:39.780-04:00  INFO 6916 --- [ventas-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T22:28:39.952-04:00  INFO 6916 --- [ventas-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-17T22:28:41.753-04:00  WARN 6916 --- [ventas-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-17T22:28:43.250-04:00  INFO 6916 --- [ventas-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9094 (http) with context path '/'
+2026-06-17T22:28:43.263-04:00  INFO 6916 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : Started VentasServiceApplication in 17.237 seconds (process running for 18.251)
+2026-06-17T22:37:35.058-04:00  INFO 17340 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : Starting VentasServiceApplication using Java 21.0.11 with PID 17340 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\ventas-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\ventas-service)
+2026-06-17T22:37:35.066-04:00  INFO 17340 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : The following 1 profile is active: "dev"
+2026-06-17T22:37:35.165-04:00  INFO 17340 --- [ventas-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-17T22:37:35.168-04:00  INFO 17340 --- [ventas-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-17T22:37:37.866-04:00  INFO 17340 --- [ventas-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-17T22:37:38.260-04:00  INFO 17340 --- [ventas-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 374 ms. Found 2 JPA repository interfaces.
+2026-06-17T22:37:39.666-04:00  INFO 17340 --- [ventas-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9094 (http)
+2026-06-17T22:37:39.692-04:00  INFO 17340 --- [ventas-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-17T22:37:39.692-04:00  INFO 17340 --- [ventas-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-17T22:37:39.795-04:00  INFO 17340 --- [ventas-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4622 ms
+2026-06-17T22:37:40.084-04:00  INFO 17340 --- [ventas-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-17T22:37:40.528-04:00  INFO 17340 --- [ventas-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b5c18a9
+2026-06-17T22:37:40.532-04:00  INFO 17340 --- [ventas-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-17T22:37:43.413-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: ventas_db.databasechangelog
+2026-06-17T22:37:43.827-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.changelog                      : Reading from ventas_db.databasechangelog
+2026-06-17T22:37:43.857-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
+2026-06-17T22:37:43.925-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
+2026-06-17T22:37:44.083-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2026-06-17T22:37:44.086-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.command                        : Using deploymentId: 1750260057
+2026-06-17T22:37:44.091-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.changelog                      : Reading from ventas_db.databasechangelog
+2026-06-17T22:37:44.139-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/001-create-ventas.yaml::1::cristopher
+2026-06-17T22:37:44.179-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.ui                             : Name 'PK_VENTAS' ignored for PRIMARY key.
+2026-06-17T22:37:44.186-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.changelog                      : Table ventas created
+2026-06-17T22:37:44.204-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.ui                             : Name 'PK_DETALLE_VENTAS' ignored for PRIMARY key.
+2026-06-17T22:37:44.206-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.changelog                      : Table detalle_ventas created
+2026-06-17T22:37:44.287-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.changelog                      : Foreign key constraint added to detalle_ventas (venta_id)
+2026-06-17T22:37:44.302-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/001-create-ventas.yaml::1::cristopher ran successfully in 149ms
+2026-06-17T22:37:44.335-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2026-06-17T22:37:44.337-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.util                           : Run:                          1
+2026-06-17T22:37:44.339-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.util                           : Previously run:               0
+2026-06-17T22:37:44.339-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.util                           : Filtered out:                 0
+2026-06-17T22:37:44.341-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.util                           : -------------------------------
+2026-06-17T22:37:44.343-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.util                           : Total change sets:            1
+2026-06-17T22:37:44.345-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.util                           : Update summary generated
+2026-06-17T22:37:44.355-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.command                        : Update command completed successfully.
+2026-06-17T22:37:44.357-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 0
+2026-06-17T22:37:44.377-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2026-06-17T22:37:44.381-04:00  INFO 17340 --- [ventas-service] [restartedMain] liquibase.command                        : Command execution complete
+2026-06-17T22:37:44.621-04:00  INFO 17340 --- [ventas-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-17T22:37:44.792-04:00  INFO 17340 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-17T22:37:46.254-04:00  INFO 17340 --- [ventas-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-17T22:37:46.453-04:00  WARN 17340 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-17T22:37:46.498-04:00  INFO 17340 --- [ventas-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/ventas_db?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: ventas_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-17T22:37:49.216-04:00  INFO 17340 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-17T22:37:49.255-04:00  INFO 17340 --- [ventas-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T22:37:49.510-04:00  INFO 17340 --- [ventas-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-17T22:37:51.375-04:00  WARN 17340 --- [ventas-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-17T22:37:52.702-04:00  INFO 17340 --- [ventas-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9094 (http) with context path '/'
+2026-06-17T22:37:52.715-04:00  INFO 17340 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : Started VentasServiceApplication in 18.604 seconds (process running for 19.729)
+2026-06-17T22:44:42.021-04:00  INFO 10708 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : Starting VentasServiceApplication using Java 21.0.11 with PID 10708 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\ventas-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\ventas-service)
+2026-06-17T22:44:42.026-04:00  INFO 10708 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : The following 1 profile is active: "dev"
+2026-06-17T22:44:42.137-04:00  INFO 10708 --- [ventas-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-17T22:44:42.139-04:00  INFO 10708 --- [ventas-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-17T22:44:44.170-04:00  INFO 10708 --- [ventas-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-17T22:44:44.521-04:00  INFO 10708 --- [ventas-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 329 ms. Found 2 JPA repository interfaces.
+2026-06-17T22:44:45.963-04:00  INFO 10708 --- [ventas-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9094 (http)
+2026-06-17T22:44:46.007-04:00  INFO 10708 --- [ventas-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-17T22:44:46.009-04:00  INFO 10708 --- [ventas-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-17T22:44:46.104-04:00  INFO 10708 --- [ventas-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3963 ms
+2026-06-17T22:44:46.432-04:00  INFO 10708 --- [ventas-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-17T22:44:46.856-04:00  INFO 10708 --- [ventas-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39207042
+2026-06-17T22:44:46.859-04:00  INFO 10708 --- [ventas-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-17T22:44:49.686-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: ventas_db.databasechangelog
+2026-06-17T22:44:50.013-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.changelog                      : Reading from ventas_db.databasechangelog
+2026-06-17T22:44:50.042-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
+2026-06-17T22:44:50.108-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
+2026-06-17T22:44:50.313-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2026-06-17T22:44:50.315-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.command                        : Using deploymentId: 1750686404
+2026-06-17T22:44:50.323-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.changelog                      : Reading from ventas_db.databasechangelog
+2026-06-17T22:44:50.396-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/001-create-ventas.yaml::1::cristopher
+2026-06-17T22:44:50.427-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.ui                             : Name 'PK_VENTAS' ignored for PRIMARY key.
+2026-06-17T22:44:50.434-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.changelog                      : Table ventas created
+2026-06-17T22:44:50.455-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.ui                             : Name 'PK_DETALLE_VENTAS' ignored for PRIMARY key.
+2026-06-17T22:44:50.458-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.changelog                      : Table detalle_ventas created
+2026-06-17T22:44:50.531-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.changelog                      : Foreign key constraint added to detalle_ventas (venta_id)
+2026-06-17T22:44:50.540-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/001-create-ventas.yaml::1::cristopher ran successfully in 133ms
+2026-06-17T22:44:50.565-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2026-06-17T22:44:50.566-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.util                           : Run:                          1
+2026-06-17T22:44:50.569-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.util                           : Previously run:               0
+2026-06-17T22:44:50.569-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.util                           : Filtered out:                 0
+2026-06-17T22:44:50.571-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.util                           : -------------------------------
+2026-06-17T22:44:50.571-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.util                           : Total change sets:            1
+2026-06-17T22:44:50.571-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.util                           : Update summary generated
+2026-06-17T22:44:50.581-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.command                        : Update command completed successfully.
+2026-06-17T22:44:50.583-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 0
+2026-06-17T22:44:50.590-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2026-06-17T22:44:50.593-04:00  INFO 10708 --- [ventas-service] [restartedMain] liquibase.command                        : Command execution complete
+2026-06-17T22:44:50.801-04:00  INFO 10708 --- [ventas-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-17T22:44:50.926-04:00  INFO 10708 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-17T22:44:52.307-04:00  INFO 10708 --- [ventas-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-17T22:44:52.515-04:00  WARN 10708 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-17T22:44:52.555-04:00  INFO 10708 --- [ventas-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/ventas_db?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: ventas_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-17T22:44:54.517-04:00  INFO 10708 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-17T22:44:54.539-04:00  INFO 10708 --- [ventas-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T22:44:54.724-04:00  INFO 10708 --- [ventas-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-17T22:44:56.169-04:00  WARN 10708 --- [ventas-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-17T22:44:57.409-04:00  INFO 10708 --- [ventas-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9094 (http) with context path '/'
+2026-06-17T22:44:57.433-04:00  INFO 10708 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : Started VentasServiceApplication in 16.226 seconds (process running for 17.03)
+2026-06-17T22:48:07.226-04:00  INFO 13816 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : Starting VentasServiceApplication using Java 21.0.11 with PID 13816 (C:\Users\crist\Desktop\Proyecto\titaniumarmor\ventas-service\target\classes started by crist in C:\Users\crist\Desktop\Proyecto\titaniumarmor\ventas-service)
+2026-06-17T22:48:07.230-04:00  INFO 13816 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : The following 1 profile is active: "dev"
+2026-06-17T22:48:07.323-04:00  INFO 13816 --- [ventas-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-17T22:48:07.323-04:00  INFO 13816 --- [ventas-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-17T22:48:09.194-04:00  INFO 13816 --- [ventas-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-17T22:48:09.694-04:00  INFO 13816 --- [ventas-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 468 ms. Found 2 JPA repository interfaces.
+2026-06-17T22:48:10.971-04:00  INFO 13816 --- [ventas-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9094 (http)
+2026-06-17T22:48:11.007-04:00  INFO 13816 --- [ventas-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-17T22:48:11.009-04:00  INFO 13816 --- [ventas-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-17T22:48:11.120-04:00  INFO 13816 --- [ventas-service] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3793 ms
+2026-06-17T22:48:11.545-04:00  INFO 13816 --- [ventas-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-17T22:48:12.025-04:00  INFO 13816 --- [ventas-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b5c18a9
+2026-06-17T22:48:12.034-04:00  INFO 13816 --- [ventas-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-17T22:48:14.522-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.changelog                      : Creating database changelog table with name: ventas_db.databasechangelog
+2026-06-17T22:48:14.824-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.changelog                      : Reading from ventas_db.databasechangelog
+2026-06-17T22:48:14.851-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.snapshot                       : Creating snapshot
+2026-06-17T22:48:14.907-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.ui                             : Name 'PK_DATABASECHANGELOGLOCK' ignored for PRIMARY key.
+2026-06-17T22:48:15.100-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2026-06-17T22:48:15.104-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.command                        : Using deploymentId: 1750891507
+2026-06-17T22:48:15.110-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.changelog                      : Reading from ventas_db.databasechangelog
+2026-06-17T22:48:15.163-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/changes/001-create-ventas.yaml::1::cristopher
+2026-06-17T22:48:15.195-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.ui                             : Name 'PK_VENTAS' ignored for PRIMARY key.
+2026-06-17T22:48:15.197-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.changelog                      : Table ventas created
+2026-06-17T22:48:15.215-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.ui                             : Name 'PK_DETALLE_VENTAS' ignored for PRIMARY key.
+2026-06-17T22:48:15.219-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.changelog                      : Table detalle_ventas created
+2026-06-17T22:48:15.292-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.changelog                      : Foreign key constraint added to detalle_ventas (venta_id)
+2026-06-17T22:48:15.302-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/changes/001-create-ventas.yaml::1::cristopher ran successfully in 126ms
+2026-06-17T22:48:15.336-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2026-06-17T22:48:15.336-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.util                           : Run:                          1
+2026-06-17T22:48:15.338-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.util                           : Previously run:               0
+2026-06-17T22:48:15.340-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.util                           : Filtered out:                 0
+2026-06-17T22:48:15.340-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.util                           : -------------------------------
+2026-06-17T22:48:15.344-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.util                           : Total change sets:            1
+2026-06-17T22:48:15.347-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.util                           : Update summary generated
+2026-06-17T22:48:15.358-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.command                        : Update command completed successfully.
+2026-06-17T22:48:15.370-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 0
+2026-06-17T22:48:15.390-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2026-06-17T22:48:15.393-04:00  INFO 13816 --- [ventas-service] [restartedMain] liquibase.command                        : Command execution complete
+2026-06-17T22:48:15.620-04:00  INFO 13816 --- [ventas-service] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-17T22:48:15.759-04:00  INFO 13816 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-17T22:48:17.089-04:00  INFO 13816 --- [ventas-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-17T22:48:17.228-04:00  WARN 13816 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-06-17T22:48:17.271-04:00  INFO 13816 --- [ventas-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/ventas_db?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: ventas_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-17T22:48:19.827-04:00  INFO 13816 --- [ventas-service] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-17T22:48:19.850-04:00  INFO 13816 --- [ventas-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T22:48:20.001-04:00  INFO 13816 --- [ventas-service] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-17T22:48:21.121-04:00  WARN 13816 --- [ventas-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-17T22:48:22.365-04:00  INFO 13816 --- [ventas-service] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9094 (http) with context path '/'
+2026-06-17T22:48:22.381-04:00  INFO 13816 --- [ventas-service] [restartedMain] c.t.v.VentasServiceApplication           : Started VentasServiceApplication in 16.044 seconds (process running for 16.963)
+2026-06-17T22:51:27.143-04:00  INFO 13816 --- [ventas-service] [http-nio-9094-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-17T22:51:27.146-04:00  INFO 13816 --- [ventas-service] [http-nio-9094-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-17T22:51:27.151-04:00  INFO 13816 --- [ventas-service] [http-nio-9094-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-06-17T22:51:27.206-04:00  INFO 13816 --- [ventas-service] [http-nio-9094-exec-1] c.t.ventas_service.service.VentaService  : Listando todas las ventas registradas

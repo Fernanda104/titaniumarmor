@@ -1,0 +1,60 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: api-gateway
+
+  main:
+    web-application-type: reactive
+
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+
+            - id: usuarios-service
+              uri: http://localhost:9091
+              predicates:
+                - Path=/usuarios/**
+
+            - id: catalogo-productos
+              uri: http://localhost:9092
+              predicates:
+                - Path=/productos/**
+
+            - id: catalogo-categorias
+              uri: http://localhost:9092
+              predicates:
+                - Path=/categorias/**
+
+            - id: inventario-service
+              uri: http://localhost:9093
+              predicates:
+                - Path=/inventarios/**
+
+            - id: ventas-service
+              uri: http://localhost:9094
+              predicates:
+                - Path=/ventas/**
+
+            - id: pagos-service
+              uri: http://localhost:9095
+              predicates:
+                - Path=/pagos/**
+
+            - id: envios-service
+              uri: http://localhost:9096
+              predicates:
+                - Path=/envios/**
+
+            - id: promociones-service
+              uri: http://localhost:9098
+              predicates:
+                - Path=/promociones/**
+
+            - id: resenas-service
+              uri: http://localhost:9099
+              predicates:
+                - Path=/resenas/**

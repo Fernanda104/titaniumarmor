@@ -20,7 +20,7 @@ public class DetalleVenta {
 
     private Long productoId;
 
-    private Integer cantidad;
+    private int cantidad;
 
     private Double precio;
 
