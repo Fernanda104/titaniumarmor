@@ -109,4 +109,9 @@ public class PagoService {
         log.info("Buscando pagos por fechas");
         return pagoRepository.findByFechaBetween(inicio, fin);
     }
+
+    public Boolean exists(Long id) {
+
+    return pagoRepository.existsById(id);
+}
 }

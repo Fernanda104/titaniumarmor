@@ -6,7 +6,10 @@ import com.titaniumarmor.envios_service.model.Envio;
 import com.titaniumarmor.envios_service.repository.EnvioRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import java.util.List;
 
@@ -16,6 +19,12 @@ import java.util.List;
 public class EnviosService {
 
     private final EnvioRepository envioRepository;
+    private final WebClient webClient;
+
+    @Value("${api.venta.exists}")
+    private String ventaExistsPath;
+
+
 
     public List<Envio> listar() {
         log.info("Consultando lista completa de envios");
@@ -31,15 +40,25 @@ public class EnviosService {
                 });
     }
 
-    public Envio guardar(EnvioDTO dto) {
-        log.info("Intentando registrar nuevo envio");
+public Envio guardar(EnvioDTO dto) {
+    log.info("Intentando registrar nuevo envio para ventaId={}", dto.getVentaId());
 
-        Envio envio = dto.toModel();
-        Envio guardado = envioRepository.save(envio);
-        
-        log.info("Envio creado exitosamente con ID: {}", guardado.getId());
-        return guardado;
+    Boolean ventaExiste = webClient.get()
+            .uri(String.format(ventaExistsPath, dto.getVentaId()))
+            .retrieve()
+            .bodyToMono(Boolean.class)
+            .block();
+
+    if (Boolean.FALSE.equals(ventaExiste) || ventaExiste == null) {
+        throw new ResourceNotFoundException("Venta no existe");
     }
+
+    Envio envio = dto.toModel();
+    Envio guardado = envioRepository.save(envio);
+
+    log.info("Envio creado exitosamente con ID: {}", guardado.getId());
+    return guardado;
+}
 
     public Envio actualizar(Long id, EnvioDTO dto) {
         log.info("Iniciando actualización para envio ID: {}", id);

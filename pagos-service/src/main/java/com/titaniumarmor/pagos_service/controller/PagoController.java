@@ -108,4 +108,14 @@ public class PagoController {
                 )
         );
     }
+
+    @GetMapping("/{id}/exists")
+public ResponseEntity<Boolean> exists(
+        @PathVariable Long id
+) {
+
+    return ResponseEntity.ok(
+            pagoService.exists(id)
+    );
+}
 }
