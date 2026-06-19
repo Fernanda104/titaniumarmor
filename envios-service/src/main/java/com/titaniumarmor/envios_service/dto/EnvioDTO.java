@@ -12,7 +12,7 @@ import lombok.*;
 public class EnvioDTO {
     private Long id;
 
-    private Long ventaId;
+    private Long pagoId;
 
     @NotBlank
     private String direccionEntrega;
@@ -30,7 +30,7 @@ public class EnvioDTO {
         
         return Envio.builder()
                 .id(id)
-                .ventaId(ventaId)
+                .pagoId(pagoId)
                 .direccionEntrega(direccionEntrega)
                 .empresaTransporte(empresaTransporte)
                 .numeroSeguimiento(numeroSeguimiento)
@@ -41,7 +41,7 @@ public class EnvioDTO {
     public static EnvioDTO fromEntity(Envio envio) {
         return EnvioDTO.builder()
                 .id(envio.getId())
-                .ventaId(envio.getVentaId())
+                .pagoId(envio.getPagoId())
                 .direccionEntrega(envio.getDireccionEntrega())
                 .empresaTransporte(envio.getEmpresaTransporte())
                 .numeroSeguimiento(envio.getNumeroSeguimiento())

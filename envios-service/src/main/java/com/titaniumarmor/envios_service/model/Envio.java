@@ -20,7 +20,7 @@ public class Envio {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Long ventaId;
+    private Long pagoId;
 
     private String direccionEntrega;
 

@@ -83,12 +83,8 @@ public class EnvioController {
         );
     }
 
-    @GetMapping("/venta/{ventaId}")
-    public ResponseEntity<List<Envio>> buscarPorVentaId(
-            @PathVariable Long ventaId) {
-
-        return ResponseEntity.ok(
-                enviosService.buscarPorVentaId(ventaId)
-        );
-}
+        @GetMapping("/pago/{pagoId}")
+        public ResponseEntity<List<Envio>> buscarPorPagoId(@PathVariable Long pagoId) {
+        return ResponseEntity.ok(enviosService.buscarPorPagoId(pagoId));
+        }
 }

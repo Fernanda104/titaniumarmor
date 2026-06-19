@@ -118,4 +118,9 @@ public ResponseEntity<Boolean> exists(
             pagoService.exists(id)
     );
 }
+
+@GetMapping("/{id}/aprobado")
+public ResponseEntity<Boolean> estaAprobado(@PathVariable Long id) {
+    return ResponseEntity.ok(pagoService.estaAprobado(id));
+}
 }

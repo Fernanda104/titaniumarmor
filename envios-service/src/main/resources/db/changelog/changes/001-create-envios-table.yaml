@@ -21,7 +21,7 @@ databaseChangeLog:
                     nullable: false
 
               - column:
-                  name: venta_id
+                  name: pago_id
                   type: BIGINT
 
               - column:

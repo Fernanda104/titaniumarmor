@@ -21,8 +21,8 @@ public class EnviosService {
     private final EnvioRepository envioRepository;
     private final WebClient webClient;
 
-    @Value("${api.venta.exists}")
-    private String ventaExistsPath;
+    @Value("${api.pago.aprobado}")
+    private String pagoAprobadoPath;
 
 
 
@@ -41,16 +41,16 @@ public class EnviosService {
     }
 
 public Envio guardar(EnvioDTO dto) {
-    log.info("Intentando registrar nuevo envio para ventaId={}", dto.getVentaId());
+    log.info("Intentando registrar nuevo envio para pagoId={}", dto.getPagoId());
 
-    Boolean ventaExiste = webClient.get()
-            .uri(String.format(ventaExistsPath, dto.getVentaId()))
+    Boolean pagoAprobado = webClient.get()
+            .uri(String.format(pagoAprobadoPath, dto.getPagoId()))
             .retrieve()
             .bodyToMono(Boolean.class)
             .block();
 
-    if (Boolean.FALSE.equals(ventaExiste) || ventaExiste == null) {
-        throw new ResourceNotFoundException("Venta no existe");
+    if (pagoAprobado == null || Boolean.FALSE.equals(pagoAprobado)) {
+        throw new ResourceNotFoundException("El pago no existe o no está aprobado");
     }
 
     Envio envio = dto.toModel();
@@ -66,7 +66,7 @@ public Envio guardar(EnvioDTO dto) {
         Envio envio = buscarPorId(id);
 
 
-        envio.setVentaId(dto.getVentaId());
+        envio.setPagoId(dto.getPagoId());
         envio.setDireccionEntrega(dto.getDireccionEntrega());
         envio.setEmpresaTransporte(dto.getEmpresaTransporte());
         envio.setNumeroSeguimiento(dto.getNumeroSeguimiento());
@@ -91,9 +91,9 @@ public Envio guardar(EnvioDTO dto) {
         return existe;
     }
 
-    public List<Envio> buscarPorVentaId(Long ventaId) {
-        log.info("Buscando envio por ID de venta: {}", ventaId);
-        return envioRepository.findByVentaId(ventaId);
+    public List<Envio> buscarPorPagoId(Long pagoId) {
+        log.info("Buscando envio por ID de pago: {}", pagoId);
+        return envioRepository.findByPagoId(pagoId);
     }
 
     public List<Envio> buscarPorEstado(String estado) {

@@ -114,4 +114,11 @@ public class PagoService {
 
     return pagoRepository.existsById(id);
 }
+
+    public Boolean estaAprobado(Long id) {
+    Pago pago = buscarPorId(id);
+    return "APROBADO".equalsIgnoreCase(pago.getEstado());
+}
+
+
 }
