@@ -1,0 +1,41 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: 1
+      author: fernanda
+
+      changes:
+
+        - createTable:
+            tableName: resenas
+
+            columns:
+
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: producto_id
+                  type: BIGINT
+
+              - column:
+                  name: usuario_id
+                  type: BIGINT
+
+              - column:
+                  name: puntuacion
+                  type: INT
+
+              - column:
+                  name: comentario
+                  type: VARCHAR(100)
+
+              - column:
+                  name: fecha_creacion
+                  type: TIMESTAMP
