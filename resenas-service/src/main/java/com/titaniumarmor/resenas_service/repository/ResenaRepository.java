@@ -15,7 +15,7 @@ public interface ResenaRepository extends JpaRepository<Resena, Long> {
 
     boolean existsByProductoIdAndUsuarioId(Long productoId, Long usuarioId);
 
-    @Query("SELECT AVG(r.calificacion) FROM Resena r WHERE r.productoId = :productoId")
+    @Query("SELECT AVG(r.puntuacion) FROM Resena r WHERE r.productoId = :productoId")
     Double promedioProducto(@Param("productoId") Long productoId);
 
 }
