@@ -12,7 +12,7 @@ public class SwaggerConfig {
     public OpenAPI customOpenAPI(){
         return new OpenAPI()
                 .info(new Info()
-                        .title("API Promociones de TitaiumArmor")
+                        .title("API Promociones de TitaniumArmor")
                         .version("1.0")
                         .description("Documentación de la API para el sistema de promociones de la tienda TitaniunArmor")
                     );
