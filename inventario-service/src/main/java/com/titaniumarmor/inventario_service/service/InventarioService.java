@@ -6,6 +6,8 @@ import com.titaniumarmor.inventario_service.model.Inventario;
 import com.titaniumarmor.inventario_service.repository.InventarioRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -15,7 +17,6 @@ import java.util.List;
 @RequiredArgsConstructor
 @Slf4j
 public class InventarioService {
-
     private final InventarioRepository inventarioRepository;
     private final WebClient webClient;
 
