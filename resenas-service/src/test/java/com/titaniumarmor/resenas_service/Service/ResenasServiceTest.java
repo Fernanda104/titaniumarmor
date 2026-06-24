@@ -1,4 +1,4 @@
-package com.titaniumarmor.resenas_service.service.Service;
+package com.titaniumarmor.resenas_service.Service;
 
 import com.titaniumarmor.resenas_service.dto.ResenasDTO;
 import com.titaniumarmor.resenas_service.exception.BadRequestException;
