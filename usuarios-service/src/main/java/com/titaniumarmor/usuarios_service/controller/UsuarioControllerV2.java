@@ -32,7 +32,7 @@ public class UsuarioControllerV2 {
 
     @GetMapping
     public CollectionModel<EntityModel<Usuario>> listarUsuarios() {
-        logger.info("V2 GET /pagos - Listando pagos");
+        logger.info("V2 GET /usuarios - Listando usuarios");
         List<EntityModel<Usuario>> usuarios = usuarioService.listar().stream()
                 .map(assembler::toModel)
                 .collect(Collectors.toList());
