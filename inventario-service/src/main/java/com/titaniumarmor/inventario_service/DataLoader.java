@@ -10,12 +10,15 @@ import org.springframework.stereotype.Component;
 import com.titaniumarmor.inventario_service.model.Inventario;
 import com.titaniumarmor.inventario_service.repository.InventarioRepository;
 
+import lombok.RequiredArgsConstructor;
+
 @Profile("dev")
 @Component
+@RequiredArgsConstructor
 public class DataLoader implements CommandLineRunner {
 
     @Autowired
-    private InventarioRepository inventarioRepository;
+    private final InventarioRepository inventarioRepository;
 
     @Override
     public void run(String... args) throws Exception {

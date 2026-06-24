@@ -12,7 +12,6 @@ import org.springframework.stereotype.Component;
 
 import com.titaniumarmor.ventas_service.model.DetalleVenta;
 import com.titaniumarmor.ventas_service.model.Venta;
-import com.titaniumarmor.ventas_service.repository.DetalleVentaRepository;
 import com.titaniumarmor.ventas_service.repository.VentaRepository;
 
 import net.datafaker.Faker;
