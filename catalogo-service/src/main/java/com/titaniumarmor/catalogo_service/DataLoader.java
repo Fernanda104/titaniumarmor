@@ -28,7 +28,13 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+  if (categoriaRepository.count() == 0) {
+        // Crear categorías
+    }
 
+    if (productoRepository.count() == 0) {
+        // Crear productos
+    }
         Faker faker = new Faker();
         Random random = new Random();
 

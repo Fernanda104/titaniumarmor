@@ -1,4 +1,4 @@
-package com.titaniumarmor.ventas_service.service;
+package com.titaniumarmor.ventas_service;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -25,6 +25,9 @@ public class DataLoader implements CommandLineRunner{
 
     @Override
     public void run(String... args) throws Exception {
+
+    if (ventaRepository.count() == 0) {
+    }
         Faker faker = new Faker();
         Random random = new Random();
     

@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.titaniumarmor.usuarios_service.assemblers.UsuarioModelAssembler;
+import com.titaniumarmor.usuarios_service.assembler.UsuarioModelAssembler;
 import com.titaniumarmor.usuarios_service.model.Usuario;
 import com.titaniumarmor.usuarios_service.service.UsuarioService;
 
 
 @RestController
-@RequestMapping("pagos/v2")
+@RequestMapping("usuarios/v2")
 public class UsuarioControllerV2 {
     private final UsuarioService usuarioService;
     private final UsuarioModelAssembler assembler;

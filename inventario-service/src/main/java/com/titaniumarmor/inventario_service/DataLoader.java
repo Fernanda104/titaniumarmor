@@ -23,6 +23,9 @@ public class DataLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
+          if (inventarioRepository.count() == 0) {
+    
+    }
         Random random = new Random();
 
         String[] ubicaciones = {

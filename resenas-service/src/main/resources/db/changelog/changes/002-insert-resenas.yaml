@@ -1,0 +1,82 @@
+databaseChangeLog:
+- changeSet:
+    id: 2
+    author: Cristopher
+
+    changes:
+
+      - insert:
+          tableName: resenas
+          columns:
+            - column:
+                name: producto_id
+                valueNumeric: 1
+            - column:
+                name: usuario_id
+                valueNumeric: 1
+            - column:
+                name: puntuacion
+                valueNumeric: 5
+            - column:
+                name: comentario
+                value: "Excelente calidad y muy cómodo."
+            - column:
+                name: fecha_creacion
+                valueDate: "2026-06-24T10:30:00"
+
+      - insert:
+          tableName: resenas
+          columns:
+            - column:
+                name: producto_id
+                valueNumeric: 2
+            - column:
+                name: usuario_id
+                valueNumeric: 2
+            - column:
+                name: puntuacion
+                valueNumeric: 4
+            - column:
+                name: comentario
+                value: "Buen producto, llegó a tiempo."
+            - column:
+                name: fecha_creacion
+                valueDate: "2026-06-24T11:00:00"
+
+      - insert:
+          tableName: resenas
+          columns:
+            - column:
+                name: producto_id
+                valueNumeric: 3
+            - column:
+                name: usuario_id
+                valueNumeric: 3
+            - column:
+                name: puntuacion
+                valueNumeric: 3
+            - column:
+                name: comentario
+                value: "Cumple su función, pero esperaba más."
+            - column:
+                name: fecha_creacion
+                valueDate: "2026-06-24T12:15:00"
+
+      - insert:
+          tableName: resenas
+          columns:
+            - column:
+                name: producto_id
+                valueNumeric: 4
+            - column:
+                name: usuario_id
+                valueNumeric: 4
+            - column:
+                name: puntuacion
+                valueNumeric: 5
+            - column:
+                name: comentario
+                value: "Muy recomendable, volvería a comprar."
+            - column:
+                name: fecha_creacion
+                valueDate: "2026-06-24T13:45:00"

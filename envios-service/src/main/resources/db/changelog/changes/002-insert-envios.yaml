@@ -1,0 +1,102 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: 2
+      author: Cristopher
+
+      changes:
+
+        - insert:
+            tableName: envios
+            columns:
+              - column:
+                  name: pago_id
+                  valueNumeric: 1
+              - column:
+                  name: direccion_entrega
+                  value: "Av. Providencia 1234, Santiago"
+              - column:
+                  name: empresa_transporte
+                  value: "Chilexpress"
+              - column:
+                  name: numero_seguimiento
+                  value: "CHX-20260001"
+              - column:
+                  name: estado
+                  value: "Preparando"
+
+        - insert:
+            tableName: envios
+            columns:
+              - column:
+                  name: pago_id
+                  valueNumeric: 2
+              - column:
+                  name: direccion_entrega
+                  value: "Av. Apoquindo 5500, Las Condes"
+              - column:
+                  name: empresa_transporte
+                  value: "Starken"
+              - column:
+                  name: numero_seguimiento
+                  value: "STK-20260002"
+              - column:
+                  name: estado
+                  value: "En tránsito"
+
+        - insert:
+            tableName: envios
+            columns:
+              - column:
+                  name: pago_id
+                  valueNumeric: 3
+              - column:
+                  name: direccion_entrega
+                  value: "Av. Alemania 450, Temuco"
+              - column:
+                  name: empresa_transporte
+                  value: "Blue Express"
+              - column:
+                  name: numero_seguimiento
+                  value: "BLU-20260003"
+              - column:
+                  name: estado
+                  value: "Entregado"
+
+        - insert:
+            tableName: envios
+            columns:
+              - column:
+                  name: pago_id
+                  valueNumeric: 4
+              - column:
+                  name: direccion_entrega
+                  value: "Calle O'Higgins 210, Concepción"
+              - column:
+                  name: empresa_transporte
+                  value: "CorreosChile"
+              - column:
+                  name: numero_seguimiento
+                  value: "COR-20260004"
+              - column:
+                  name: estado
+                  value: "Despachado"
+
+        - insert:
+            tableName: envios
+            columns:
+              - column:
+                  name: pago_id
+                  valueNumeric: 5
+              - column:
+                  name: direccion_entrega
+                  value: "Av. Costanera 890, Puerto Montt"
+              - column:
+                  name: empresa_transporte
+                  value: "Chilexpress"
+              - column:
+                  name: numero_seguimiento
+                  value: "CHX-20260005"
+              - column:
+                  name: estado
+                  value: "Pendiente"

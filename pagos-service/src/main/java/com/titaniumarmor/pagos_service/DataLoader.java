@@ -1,6 +1,7 @@
 package com.titaniumarmor.pagos_service;
 
 import com.titaniumarmor.pagos_service.dto.PagoDTO;
+import com.titaniumarmor.pagos_service.repository.PagoRepository;
 import com.titaniumarmor.pagos_service.service.PagoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -16,9 +17,14 @@ public class DataLoader implements CommandLineRunner {
     @Autowired
     private PagoService pagoService;
 
+    @Autowired
+    private PagoRepository pagoRepository;
+
     @Override
     public void run(String... args) throws Exception {
 
+        if (pagoRepository.count() == 0) {
+    }
         Random random = new Random();
 
         String[] metodosPago = {
