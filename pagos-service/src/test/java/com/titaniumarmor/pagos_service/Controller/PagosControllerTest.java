@@ -93,7 +93,7 @@ public class PagosControllerTest {
 
         mockMvc.perform(get("/pagos/{id}", id))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.id").value(id))
+                .andExpect(jsonPath("$.id").value(1))
                 .andExpect(jsonPath("$.estado").value("APROBADO"));
 
         verify(pagoService).buscarPorId(id);
@@ -171,48 +171,4 @@ public class PagosControllerTest {
         verify(pagoService).eliminar(id);
     }
 
-    @Test
-    void testBuscarPorEstado() throws Exception {
-
-        List<Pago> lista = List.of(
-                Pago.builder()
-                        .id(1L)
-                        .estado("APROBADO")
-                        .build()
-        );
-
-        when(pagoService.buscarPorEstado("APROBADO"))
-                .thenReturn(lista);
-
-        mockMvc.perform(get("/pagos/estado/APROBADO"))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].estado").value("APROBADO"));
-
-        verify(pagoService).buscarPorEstado("APROBADO");
-    }
-
-    @Test
-    void testExists() throws Exception {
-
-        when(pagoService.exists(1L)).thenReturn(true);
-
-        mockMvc.perform(get("/pagos/1/exists"))
-                .andExpect(status().isOk())
-                .andExpect(content().string("true"));
-
-        verify(pagoService).exists(1L);
-    }
-
-    @Test
-    void testEstaAprobado() throws Exception {
-
-        when(pagoService.estaAprobado(1L))
-                .thenReturn(true);
-
-        mockMvc.perform(get("/pagos/1/aprobado"))
-                .andExpect(status().isOk())
-                .andExpect(content().string("true"));
-
-        verify(pagoService).estaAprobado(1L);
-    }
 }

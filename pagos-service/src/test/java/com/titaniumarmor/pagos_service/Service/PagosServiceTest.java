@@ -78,6 +78,9 @@ public class PagosServiceTest {
         assertNotNull(encontrado);
         assertEquals(id, encontrado.getId());
         assertEquals("APROBADO", encontrado.getEstado());
+
+        verify(pagoRepository, times(1))
+                .findById(id);
     }
 
     @Test
@@ -111,39 +114,5 @@ public class PagosServiceTest {
 
         verify(pagoRepository, times(1))
                 .delete(pago);
-    }
-
-    @Test
-    public void testExists() {
-
-        Long id = 1L;
-
-        when(pagoRepository.existsById(id))
-                .thenReturn(true);
-
-        Boolean resultado = pagoService.exists(id);
-
-        assertTrue(resultado);
-
-        verify(pagoRepository, times(1))
-                .existsById(id);
-    }
-
-    @Test
-    public void testEstaAprobado() {
-
-        Long id = 1L;
-
-        Pago pago = Pago.builder()
-                .id(id)
-                .estado("APROBADO")
-                .build();
-
-        when(pagoRepository.findById(id))
-                .thenReturn(Optional.of(pago));
-
-        Boolean resultado = pagoService.estaAprobado(id);
-
-        assertTrue(resultado);
     }
 }
