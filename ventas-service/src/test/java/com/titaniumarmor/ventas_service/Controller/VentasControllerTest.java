@@ -92,7 +92,7 @@ public class VentasControllerTest {
 
         mockMvc.perform(get("/ventas/{id}", id))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.id").value(id))
+                .andExpect(jsonPath("$.id").value(1))
                 .andExpect(jsonPath("$.estado").value("PENDIENTE"));
 
         verify(ventaService).buscarPorId(id);
