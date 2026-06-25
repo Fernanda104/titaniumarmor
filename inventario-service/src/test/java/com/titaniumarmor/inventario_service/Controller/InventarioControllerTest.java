@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/inventarios")
 @RequiredArgsConstructor
-public class InventarioController {
+public class InventarioControllerTest {
 
     private final InventarioService inventarioService;
 
