@@ -8,6 +8,12 @@ spring:
   main:
     web-application-type: reactive
 
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          secret-key: esta_es_mi_compleja_clave_secreta
+
   cloud:
     gateway:
       server:
@@ -48,6 +54,11 @@ spring:
               uri: http://envios-service:9096
               predicates:
                 - Path=/envios/**
+
+            - id: auth-service
+              uri: http://auth-service:9097
+              predicates:
+                - Path=/auth/**    
 
             - id: promociones-service
               uri: http://promociones-service:9098

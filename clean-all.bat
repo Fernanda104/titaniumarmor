@@ -24,3 +24,6 @@ call .\mvnw clean
 
 cd ../resenas-service
 call .\mvnw clean
+
+cd ../auth-service
+call .\mvnw clean
