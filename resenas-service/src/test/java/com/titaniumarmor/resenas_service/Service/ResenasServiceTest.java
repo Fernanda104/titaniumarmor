@@ -1,7 +1,5 @@
 package com.titaniumarmor.resenas_service.Service;
 
-import com.titaniumarmor.resenas_service.dto.ResenasDTO;
-import com.titaniumarmor.resenas_service.exception.BadRequestException;
 import com.titaniumarmor.resenas_service.exception.ResourceNotFoundException;
 import com.titaniumarmor.resenas_service.model.Resena;
 import com.titaniumarmor.resenas_service.repository.ResenaRepository;
