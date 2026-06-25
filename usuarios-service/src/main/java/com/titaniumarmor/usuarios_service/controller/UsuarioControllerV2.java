@@ -29,7 +29,7 @@ public class UsuarioControllerV2 {
         this.usuarioService = usuarioService;
         this.assembler = assembler;
     }
-
+    /*Listamos usuarios en v2 */
     @GetMapping
     public CollectionModel<EntityModel<Usuario>> listarUsuarios() {
         logger.info("V2 GET /usuarios - Listando usuarios");
