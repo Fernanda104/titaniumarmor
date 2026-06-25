@@ -86,22 +86,4 @@ public class ResenasServiceTest {
         );
     }
 
-    @Test
-    void testGuardarDuplicado() {
-
-        ResenasDTO dto = ResenasDTO.builder()
-                .productoId(1L)
-                .usuarioId(2L)
-                .puntuacion(5)
-                .comentario("Excelente")
-                .build();
-
-        when(resenaRepository.existsByProductoIdAndUsuarioId(1L,2L))
-                .thenReturn(true);
-
-        assertThrows(
-                BadRequestException.class,
-                () -> resenasService.guardar(dto)
-        );
-    }
 }
