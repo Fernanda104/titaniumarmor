@@ -19,6 +19,7 @@ services:
       - resenas-service
       - envios-service
       - auth-service
+      - soporte-service
 
   usuarios-service:
     build: ./usuarios-service
@@ -80,5 +81,12 @@ services:
     build: ./resenas-service
     ports:
       - "9099:9099"
+    environment:
+      <<: *common-env
+      
+  soporte-service:
+    build: ./soporte-service
+    ports:
+      - "9089:9089"
     environment:
       <<: *common-env

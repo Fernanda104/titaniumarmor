@@ -27,3 +27,6 @@ call .\mvnw clean
 
 cd ../auth-service
 call .\mvnw clean
+
+cd ../soporte-service
+call .\mvnw clean

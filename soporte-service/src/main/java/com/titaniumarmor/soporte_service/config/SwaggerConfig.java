@@ -11,9 +11,9 @@ public class SwaggerConfig {
     public OpenAPI customOpenAPI(){
         return new OpenAPI()
                 .info(new Info()
-                        .title("API Reseñas de TitaiumArmor")
+                        .title("API soporte de TitaiumArmor")
                         .version("1.0")
-                        .description("Documentación de la API para el sistema de reseñas de la tienda TitaniunArmor")
+                        .description("Documentación de la API para el sistema de soporte de la tienda TitaniunArmor")
                 );
     }
 }
