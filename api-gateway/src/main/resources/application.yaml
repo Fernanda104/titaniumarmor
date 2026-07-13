@@ -69,3 +69,8 @@ spring:
               uri: http://resenas-service:9099
               predicates:
                 - Path=/resenas/**
+
+            - id: soporte-service
+              uri: http://soporte-service:9089
+              predicates:
+                - Path=/soporte/**
