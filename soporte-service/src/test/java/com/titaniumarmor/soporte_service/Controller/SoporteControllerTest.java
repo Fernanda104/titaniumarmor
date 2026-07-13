@@ -131,58 +131,59 @@ public class SoporteControllerTest {
     }
 
     @Test
-    void testGuardar()
-            throws Exception {
+        void testGuardar() throws Exception {
 
-        SoporteDTO dto =
-                SoporteDTO.builder()
-                        .usuarioId(10L)
-                        .asunto("Problema de pago")
-                        .descripcion("No se registró la compra")
-                        .build();
+    SoporteDTO dto =
+            SoporteDTO.builder()
+                    .usuarioId(10L)
+                    .asunto("Problema de pago")
+                    .descripcion("No se registró la compra")
+                    .build();
 
-        Soporte soporte =
-                Soporte.builder()
-                        .id(1L)
-                        .usuarioId(10L)
-                        .asunto(dto.getAsunto())
-                        .descripcion(dto.getDescripcion())
-                        .estado("ABIERTO")
-                        .fechaCreacion(LocalDateTime.now())
-                        .build();
+    Soporte soporte =
+            Soporte.builder()
+                    .id(1L)
+                    .usuarioId(10L)
+                    .asunto(dto.getAsunto())
+                    .descripcion(dto.getDescripcion())
+                    .estado("ABIERTO")
+                    .fechaCreacion(LocalDateTime.now())
+                    .build();
 
-        when(
-                soporteService.guardar(
-                        any(SoporteDTO.class)
-                )
-        ).thenReturn(soporte);
+    when(
+            soporteService.guardar(
+                    any(SoporteDTO.class)
+            )
+    ).thenReturn(soporte);
 
-        mockMvc.perform(
-                        post("/soporte")
-                                .contentType(
-                                        MediaType.APPLICATION_JSON
-                                )
-                                .content(
-                                        objectMapper
-                                                .writeValueAsString(dto)
-                                )
-                )
-                .andExpect(status().isOk())
-                .andExpect(
-                        jsonPath("$.id")
-                                .value(1)
-                )
-                .andExpect(
-                        jsonPath("$.estado")
-                                .value("ABIERTO")
-                );
+    mockMvc.perform(
+                    post("/soporte")
+                            .contentType(MediaType.APPLICATION_JSON)
+                            .content(
+                                    objectMapper.writeValueAsString(dto)
+                            )
+            )
+            .andExpect(status().isOk())
+            .andExpect(
+                    jsonPath("$.usuarioId")
+                            .value(10L)
+            )
+            .andExpect(
+                    jsonPath("$.asunto")
+                            .value("Problema de pago")
+            )
+            .andExpect(
+                    jsonPath("$.descripcion")
+                            .value("No se registró la compra")
+            );
 
-        verify(
-                soporteService
-        ).guardar(
-                any(SoporteDTO.class)
-        );
-    }
+    verify(
+            soporteService,
+            times(1)
+    ).guardar(
+            any(SoporteDTO.class)
+    );
+}
 
     @Test
     void testActualizar()
